@@ -258,27 +258,58 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/c_Sharp_pic.jpg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Θέλετε να κατανοήσετε από την αρχή και σωστά την γλώσσα προγραμματισμού C# και έννοιες όπως 
-							μεταβλητές (variables), τελεστές (operators), και δηλώσεις επιλογής (selection statements); 
-							Εάν «ΝΑΙ» τότε αυτή η σειρά δωρεάν μαθημάτων στην γλώσσα προγραμματισμού C# είναι για εσάς.</p>
+						<h2 class="content-h3">ΕΝΟΤΗΤΑ 1 - INTRODUCTION TO .NET FRAMEWORK</h2>
+						<h2 class="content-h3">INTRODUCTION</h2>
+						<p>Πριν γράψουμε τις πρώτες μας γραμμές κώδικα, θα ήταν πολύ χρήσιμο να έχετε μια 
+						βασική κατανόηση του .NET framework και των βασικών του στοιχείων και λειτουργιών 
+						όπως CLI, CLR και CLS. </p>
 
-						<p>Αυτή η ολοκληρωμένη σειρά μαθημάτων θα σας διδάξει τις βασικές αρχές της γλώσσας προγραμματισμού 
-							C# στο .NET από την αρχή. Θα οδηγηθείτε σε μια προσεκτικά επιλεγμένη προσέγγιση για αρχάριους 
-							στην εκμάθηση των βασικών αρχών προγραμματισμού C#.</p>
-
-						<p>Η σχεδίαση των δωρεάν μαθημάτων C# έχει γίνει με τέτοιο τρόπο ώστε να εξυπηρετεί δύο διαφορετικές 
-							ομάδες: τους απόλυτα αρχάριους που είναι εντελώς καινούργιοι στη C# και στο .NET παρέχοντας 
-							τους μια γερή βάση στον προγραμματισμό, και στους προγραμματιστές που προέρχονται από άλλες 
-							γλώσσες προγραμματισμού και αναζητούν να μάθουν τη σύνταξη της C# είτε για προσωπική είτε για 
-							επαγγελματική ανάπτυξη κώδικα.</p>
-
-						<p>Δεν απαιτείται προηγούμενη γνώση C# ή .NET, καθώς το μάθημα καλύπτει όλα τα απαραίτητα 
-							στοιχεία για να ξεκινήσετε με τις βασικές αρχές προγραμματισμού σωστά και μεθοδικά. </p>
-
-						<p>Συνιστάται η πρόσβαση σε περιβάλλοντα ανάπτυξης όπως το Visual Studio Code, το Visual 
-							Studio ή οποιοδήποτε IDE που υποστηρίζει C#.</p>
+						<h3 class="content-h3">WHAT IS .NET?</h3>
+						<p>Ας ξεκινήσουμε από την πιο βασική ερώτηση που συνήθως ρωτάνε οι αρχάριοι προγραμματιστές – τι 
+						ακριβώς είναι το .NEΤ; Το .NET είναι μια πλατφόρμα ανάπτυξης κώδικα για ένα μεγάλο εύρος 
+						εφαρμογών όπως desktop, web και mobile. To .ΝΕΤ framework μπορεί να εγκατασταθεί σε διάφορα 
+						λειτουργικά συστήματα όπως Windows, Linux και Mac ενώ ταυτόχρονα υποστηρίζει πολλές διαφορετικές 
+						γλώσσες προγραμματισμού όπως VB, C#, F# κτλ.</p>
 						
+						<p>Σαν <strong>Desktop Applications</strong> ονομάζουμε εκείνες τις εφαρμογές τις οποίες 
+						εγκαθιστούμε τοπικά σε έναν υπολογιστή και η χρήση τους περιορίζεται σε έναν μόνο τελικό 
+						χρήστη. Τέτοια προγράμματα συνήθως δεν έχουν πρόσβαση στο Ίντερνετ για αυτό και ονομάζονται 
+						Standalone applications. Σαν Standalone application θα μπορούσαμε να θεωρήσουμε την 
+						εφαρμογή Calculator (Αριθμομηχανή) που υπάρχει σε κάθε εγκατάσταση Windows λειτουργικού 
+						συστήματος. Το μεγάλο μειονέκτημα τέτοιους είδους εφαρμογών είναι ότι πρέπει να εγκατασταθούν 
+						σε κάθε υπολογιστή στον οποίο πρόκειται να χρησιμοποιηθεί.</p>
+
+						<p>Με το .NET framework όμως έχουμε την επιλογή να δημιουργήσουμε και <strong>Web Applications</strong> 
+						οι οποίες γίνονται εγκατάσταση σε ένα κεντρικό υπολογιστή (ονομάζεται server) και  
+						πολλαπλοί χρήστες ταυτόχρονα μπορούν αλληλοεπιδράσουν με την εφαρμογή μέσω ενός browser 
+						αφού γράψουν το σωστό URL. Παραδείγματα τέτοιου είδους εφαρμογών θεωρούνται το 
+						Facebook, το LinkedIn κτλ. </p>
+
+						<p>Μπορούμε επίσης να αναπτύξουμε και <strong>mobile applications</strong> με το .NET framework. Ο κώδικας που 
+						θα αναπτύξουμε είναι συμβατός και μπορεί να εγκατασταθεί σε όλα τα γνωστά κινητά τηλέφωνα όπως 
+						Android και iPhone. </p>
+
+					<p>Μετά από αυτή τη μικρή εισαγωγή καταλαβαίνουμε ότι όταν αναφερόμαστε στο .NET δεν μιλάμε 
+						συγκεκριμένα για μια γλώσσα προγραμματισμού αλλά για μια ευρύτερη τεχνολογία που μπορεί 
+						να δημιουργήσει όλο το εύρος των εφαρμογών.</p>
+
+					<p>Μερικά από τα πλεονεκτήματα που αποκτάμε με την δημιουργία εφαρμογών σε .NET είναι:
+						<ul>
+							<li>Η εκτέλεση του κώδικα μέσα από το ασφαλές περιβάλλον που μας εξασφαλίζει το CLR (θα μιλήσουμε σε λίγο για αυτό).</li>
+							<li>Η υποστήριξη για διάφορες γλώσσες προγραμματισμού που μπορούμε να χρησιμοποιήσουμε (αν και η επιλογή μας είναι C#).</li>
+							<li>Η χρήση κώδικα σαν service για να μπορεί να χρησιμοποιηθεί η λογική που αναπτύξαμε και από άλλες εφαρμογές.</li>
+						</ul>
+					</p>
+
+					<p>Υπάρχουν δύο μεγάλες κατηγορίες από λειτουργίες στις οποίες θα μπορούσαμε να διαιρέσουμε τις 
+						εφαρμογές μας – τις εφαρμογές που αναπτύσσουμε κυρίως σαν standalone και εκείνες που θα είναι 
+						διαθέσιμες σαν υπηρεσίες ή σαν Web εφαρμογές.</p>
+					
+					<img src="./Lesson1/pic_1.png"/>
+
+					
+
+					<p></p>
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -291,38 +322,38 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 						<!-- sectionRow -->
-						<section class="sectionRow">
+						<!-- <section class="sectionRow">
 							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ C# COMPLETE COURSE</h2>
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
-								aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
+								aria-multiselectable="true"> -->
 								<!-- panel -->
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h3 class="panel-title fw-normal">
 											<a class="accOpener" role="button" data-parent="#accordion"
 												aria-expanded="false" aria-controls="collapseOne"
 												href="https://groundofcode.blogspot.com/2022/01/1-python-installation.html"
 												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Python Installation in Windows</a>
-											<span class="accOpenerCol">
+											<span class="accOpenerCol"> -->
 
 												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-											</span>
+											<!-- </span> -->
 											<!--<span class="accOpenerCol hd-phone">
 													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 													<time datetime="2011-01-12" class="timeCount">17 Min</time>
 												</span>-->
-											</a>
+											<!-- </a>
 										</h3>
 
-									</div>
+									</div> -->
 
 
 									<!-- collapseOne -->
 
-								</div>
+								<!-- </div> -->
 
 								<!-- <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingOne">
@@ -853,10 +884,10 @@
 
 				<!-- panel -->
 
-			</div>
+			<!-- </div>
 
 
-			</section>
+			</section> -->
 
 
 			<!-- sectionRow -->
@@ -865,8 +896,8 @@
 			<div class="bookmarkFoot">
 				<div class="bookmarkCol">
 					<ul class="socail-networks list-unstyled">
-						<li><a href="#" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
-						<li><a href="#" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
+						<li><a href="https://www.facebook.com/groundofcode" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+						<li><a href="https://www.linkedin.com/groups/4390739/" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
 
 					</ul>
 				</div>
@@ -1114,9 +1145,9 @@
 			<div class="row holder">
 				<div class="col-xs-12 col-sm-push-6 col-sm-6">
 					<ul class="socail-networks list-unstyled">
-						<li><a href="#"><span class="fab fa-facebook"></span></a></li>
+						<li><a href="https://www.facebook.com/groundofcode"><span class="fab fa-facebook"></span></a></li>
 
-						<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+						<li><a href="https://www.linkedin.com/groups/4390739/"><span class="fab fa-linkedin"></span></a></li>
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-pull-6 col-sm-6">
