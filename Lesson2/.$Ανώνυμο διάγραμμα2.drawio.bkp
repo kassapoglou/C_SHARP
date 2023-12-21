@@ -1,0 +1,16 @@
+<mxfile host="Electron" modified="2023-12-20T16:04:27.582Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.11 Chrome/114.0.5735.289 Electron/25.9.8 Safari/537.36" etag="hSd3cd0aemXSU9ZiZkT1" version="22.1.11" type="device">
+  <diagram name="Σελίδα-1" id="NCi-AThMFNUpEeTRQ8DV">
+    <mxGraphModel dx="864" dy="516" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aLjc3Kiv17DBI01pFu_x-1" value="namespace FirstExample&#xa;{&#xa;    internal class Program&#xa;    {&#xa;        static void Main(string[] args)&#xa;        {&#xa;           &#xa;        }&#xa;    }&#xa;}" style="text;whiteSpace=wrap;fontSize=20;fontFamily=Architects Daughter;" vertex="1" parent="1">
+          <mxGeometry x="142" y="128" width="369" height="262" as="geometry" />
+        </mxCell>
+        <mxCell id="aLjc3Kiv17DBI01pFu_x-2" value="namespace FirstExample&#xa;{&#xa;    internal class Program&#xa;    {&#xa;        static void Main(string[] args)&#xa;        {&#xa;            Console.WriteLine(&quot;Hello, World!&quot;);&#xa;        }&#xa;    }&#xa;}" style="text;whiteSpace=wrap;fontSize=20;fontFamily=Architects Daughter;" vertex="1" parent="1">
+          <mxGeometry x="122" y="462" width="421" height="262" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
