@@ -14,7 +14,7 @@
 	<!-- set the Keyword -->
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="C#, C Sharp, ASP.NET CORE, .NET CORE, .NET, δωρεάν, seminaria C#, mathimata C#,
-               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#" />
+               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#. ADO.NET, EntityFramework" />
 	<meta name="author" content="Michail Kassapoglou" />
 	<!-- set the page title -->
 	<title>Δωρεάν Μαθήματα C#</title>
@@ -33,6 +33,7 @@
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -43,6 +44,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 
 <body>
@@ -92,7 +94,7 @@
 							<!-- logo -->
 							<div class="logo">
 								<a href="index.html">
-									<!--<img src="images/logo.png" alt="KASSAPOGLOU">-->
+									<!-- <img src="images/logo.png" alt="KASSAPOGLOU"> -->
 									<h1>KASSAPOGLOU</h1>
 								</a>
 							</div>
@@ -128,6 +130,7 @@
 												<!--<li><a href="course-single.html">Course Single</a></li>-->
 											</ul>
 										</li>
+										
 										<li class="dropdown">
 											<a href="#">WEB DEVELOPMENT</a>
 											<ul class="dropdown-menu">
@@ -209,7 +212,7 @@
 				<div class="container">
 					<!-- breadcrumb -->
 					<ol class="breadcrumb">
-						<li><a href="#">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/csharp/csharp.html">C#</a></li>
 						<!-- <li class="active">C#</li> -->
 					</ol>
@@ -267,27 +270,163 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/c_Sharp_pic.jpg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Θέλετε να κατανοήσετε από την αρχή και σωστά την γλώσσα προγραμματισμού C# και έννοιες όπως 
-							μεταβλητές (variables), τελεστές (operators), και δηλώσεις επιλογής (selection statements); 
-							Εάν «ΝΑΙ» τότε αυτή η σειρά δωρεάν μαθημάτων στην γλώσσα προγραμματισμού C# είναι για εσάς.</p>
+						<h2 class="content-h3">ΕΝΟΤΗΤΑ 5 - OPERATORS (PART 1)</h2>
+						<h2 class="content-h3">INTRODUCTION</h2>
+						<p>Σε αυτό το δωρεάν μάθημα C# θα αναφερθούμε στους πιο χρήσιμους operators και 
+							τις διάφορες κατηγορίες στις οποίες έχουν χωριστεί. θα δούμε πολλά απλά 
+							παραδείγματα για να καταλάβετε καλύτερα την σωστή χρήση τους και επίσης θα 
+							κάνουμε μια εκτεταμένη αναφορά στο online documentation της C# για να γνωρίζετε 
+							που ακριβώς να αναφερθείτε αν χρειαστείτε περισσότερες πληροφορίες.
+						</p>
+						<h2 class="content-h3">WHAT IS AN OPERATOR?</h2>
+						<p>Σαν operators ορίζουμε εκείνα τα σύμβολα που μας βοηθάνε να πραγματοποιήσουμε 
+							μια συγκεκριμένη πράξη όπως πρόσθεση, σύγκριση κτλ. και ενώ δέχονται έναν ή και 
+							περισσότερους όρους (operands) πάντα επιστρέφουν μόνο μια τιμή. Για παράδειγμα 
+							σκεφτείτε ότι έχουμε να πραγματοποιήσουμε την αριθμητική πράξη 10 + 5 = 15. Οι 
+							αριθμοί 10 και 5 είναι οι operands ενώ το σύμβολο = και το σύμβολο + είναι 
+							operators. Οπότε σε αυτή την απλή πράξη μπορούμε να πούμε ότι ο operator + λαμβάνει 
+							δύο operands (τον αριθμό 10 και τον αριθμό 5) και αφού τους προσθέσει επιστρέφει 
+							μέσω του operator = την τιμή 15.</p>
 
-						<p>Αυτή η ολοκληρωμένη σειρά μαθημάτων θα σας διδάξει τις βασικές αρχές της γλώσσας προγραμματισμού 
-							C# στο .NET από την αρχή. Θα οδηγηθείτε σε μια προσεκτικά επιλεγμένη προσέγγιση για αρχάριους 
-							στην εκμάθηση των βασικών αρχών προγραμματισμού C#.</p>
-
-						<p>Η σχεδίαση των δωρεάν μαθημάτων C# έχει γίνει με τέτοιο τρόπο ώστε να εξυπηρετεί δύο διαφορετικές 
-							ομάδες: τους απόλυτα αρχάριους που είναι εντελώς καινούργιοι στη C# και στο .NET παρέχοντας 
-							τους μια γερή βάση στον προγραμματισμό, και στους προγραμματιστές που προέρχονται από άλλες 
-							γλώσσες προγραμματισμού και αναζητούν να μάθουν τη σύνταξη της C# είτε για προσωπική είτε για 
-							επαγγελματική ανάπτυξη κώδικα.</p>
-
-						<p>Δεν απαιτείται προηγούμενη γνώση C# ή .NET, καθώς το μάθημα καλύπτει όλα τα απαραίτητα 
-							στοιχεία για να ξεκινήσετε με τις βασικές αρχές προγραμματισμού σωστά και μεθοδικά. </p>
-
-						<p>Συνιστάται η πρόσβαση σε περιβάλλοντα ανάπτυξης όπως το Visual Studio Code, το Visual 
-							Studio ή οποιοδήποτε IDE που υποστηρίζει C#.</p>
+						<p>Στην C# έχουμε αρκετούς operators για να μας διευκολύνουν με διάφορες πράξεις και 
+							χωρίζονται σε διάφορες κατηγορίες: arithmetic operators, assignment operators, increment και 
+							decrement operators, comparison operators, logical operators, concatenation operators, ternary 
+							operators και πολλούς άλλους. Αυτοί όμως οι operators που μόλις αναφέραμε θα είναι και το 
+							κύριο θέμα της συζήτηση μας σε αυτό και στο επόμενο δωρεάν μάθημα C#.</p>
+							<h2 class="content-h3">ARITHMETIC OPERATORS</h2>
 						
+						<p>Σε αυτή την κατηγορία ανήκουν εκείνοι οι operators που μας βοηθάνε να πραγματοποιήσουμε 
+							αριθμητικές πράξεις όπως πρόσθεση, αφαίρεση, πολλαπλασιασμό, διαίρεση κτλ. Αν επιθυμείτε 
+							να δείτε την ολοκληρωμένη λίστα με όλους τους arithmetic operators μπορείτε να αναφερθείτε 
+							στο documentation της 
+							C# <a href="//learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators">(//learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators).</a> </p>
+							<img src="./Lesson5/pic_1.jpg" alt="Δωρεάν Μαθήματα C#"/>
+							<p></p>
+						
+<p>Ας δούμε ένα απλό πρόγραμμα στο οποίο χρησιμοποιούμε όλους τους βασικούς arithmetic operators και 
+	μετά θα εξηγήσουμε τα σημαντικότερα σημεία του κώδικα.</p>
+	<p><Strong>Program.cs</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/ab835c471a91b08291adef9753e133c6.js"></script>
+
+	<p><Strong>Output</Strong></p>
+	<img src="./Lesson5/pic_2.jpg"/>
+		<p></p>
+
+<p>Στο απλό παραπάνω παράδειγμα δημιουργούμε δύο μεταβλητές τύπου decimal που μας επιτρέπει να 
+	πραγματοποιούμε πράξεις με μεγάλους αριθμούς και με μεγάλη ακρίβεια. Οι τέσσερις πρώτοι operators
+	αντιπροσωπεύουν τις απλές αλγεβρικές πράξεις που νομίζω ότι όλοι σας γνωρίζετε - πρόσθεση, αφαίρεση,
+	πολλαπλασιασμός και διαίρεση με τη σειρά που εκτελούνται στο κώδικα. Μετά την ολοκλήρωση της κάθε πράξης,
+	γίνεται ανάθεση της τιμής στην μεταβλητή που έχει οριστεί στα αριστερά του = operator. Σαν γενικό κανόνα,
+	μπορούμε να κρατήσουμε το γεγονός ότι όποτε έχουμε το = operator πρώτα εκτελούνται οι πράξεις από τα δεξιά του operator
+	και μετά γίνεται η ανάθεση της τιμής στην μεταβλητή που έχουμε ορίσει από την αριστερή πλευρά του operator. Αυτή η 
+	διαδικασία εξηγεί άλλωστε πως πρακτικά εκτελείται η ανάθεση μια τιμής σε μια μεταβλητή.
+</p>
+<p>Ένας χρήσιμος operator που παρουσιάζει το παραπάνω παράδειγμα είναι ο % remainder operator ο οποίος μας επιστρέφει 
+	το υπόλοιπο της διαίρεσης. </p>		
+	<h2 class="content-h3">ASSIGNMENT OPERATORS</h2>
+<p>Στους assignment operators ανήκει το γνωστό σύμβολο = στο οποίο ήδη έχουμε αναφερθεί. Όμως δεν υπάρχουν και μερικοί ακόμα
+	assignment operators που μας βοηθάνε στο να γράφουμε λιγότερο κώδικα. Για παράδειγμα, για να αυξήσουμε την τιμή μιας μεταβλητής
+	κατά μια μονάδα δεν έχουμε παρά να γράψουμε τον εξής κώδικα:
+</p>					
+<p>a = a + 1</p>
+<p>Η πράξη ξεκινάει από τα δεξιά του = operator. Διαβάζουμε λοιπόν την τιμή που ήδη έχει η τιμή a και προσθέτουμε τον αριθμό ένα αυτή. Το 
+	αποτέλεσμα της πρόσθεσης το αναθέτουμε πάλι στην ίδια μεταβλητή αντικαθιστώντας την παλιά τιμή με την καινούργια. Φυσικά δεν είναι 
+	ανάγκη να αυξήσουμε την τιμή κατά μία μονάδα. Θα μπορούσαμε να την αυξήσουμε κατά 3 ή 5 ή ακόμα και να την μειώσουμε.
+</p>
+<p>Αυτός ο τρόπος ανάπτυξης του κώδικα είναι πολύ συνηθισμένος σε πολλά προγράμματα, όμως θα μπορούσε να απλοποιηθεί ακόμα
+	πιο πολύ αν χρησιμοποιούσαμε τον += assignment operator. Αντί λοιπόν να γράφουμε a = a + 1 μπορούμε να γράψουμε a += 1 και εννούμε ακριβώς την ίδια λογική.  
+</p>
+
+<p>Ο γενικός κανόνας είναι: a = a + 1  μπορεί να απλοποιηθεί σε a += 1</p>
+<p>Οι πιο κοινοί assignment operators δίνονται στον παρακάτω πίνακα ενώ τους υπόλοιπους που αναφέρονται στο documentation της
+	C# <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/assignment-operator">(https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/assignment-operator)</a> θα τους αναλύσουμε σε μελλοντικές ενότητες.</p>
+<img src="./Lesson5/pic_3.jpg"/>
+		<p></p>
+
+<p>Ας δούμε πως μπορούμε να χρησιμοποιήσουμε αυτούς τους απλούς assignment operators σε ένα απλό πρόγραμμα.</p>
+
+<p><Strong>Program.cs</Strong></p>
+<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+<script src="https://gist.github.com/kassapoglou/a00836287fe68595f366e5c08fe8b3ab.js"></script>
+<p><Strong>Output</Strong></p>
+	<img src="./Lesson5/pic_4.jpg"/>
+		<p></p>
+
+		<h2 class="content-h3">INCREMENT / DECREMENT OPERATORS</h2>
+<p>Όταν συγκεκριμένα θέλουμε να αυξήσουμε την τιμή μιας μεταβλητής κατά μια μονάδα (ή αντίστοιχα να την μειώσουμε), υπάρχει ένας ακόμα
+	πιο σύντομος τρόπος ο οποίος είναι η χρησιμοποίηση των increment και decrement operators.
+</p>
+<p>Για να αυξήσουμε την τιμή της μεταβλητής δεν έχουμε παρά να προσθέσουμε τα σύμβολα ++ πριν ή μετά το όνομα της μεταβλητής
+	χωρίς να αφήσουμε κενό ανάμεσα στα σύμβολα και την μεταβλητή. Αντίστοιχα χρησιμοποιούμε τα σύμβολα -- για να μειώσουμε
+	την τιμή της μεταβλητής κατά μια μονάδα. Υπάρχει όμως μια μεγάλη διαφορά ως προς την τοποθέτηση των συμβόλων. Αν προσθέσουμε
+	τα σύμβολα μπροστά από το όνομα της μεταβλητής, τότε πρώτα αυξάνεται (ή μειώνεται) η τιμή και μετά μας επιστρέφεται το τελικό αποτέλεσμα, ενώ 
+	όταν τα σύμβολα είνα μετά από το όνομα τότε πρώτα μας επιστρέφεται η τιμή της μεταβλητής και μετά αυξάνεται (ή μειώνεται) κατά μια μονάδα.
+	Ο παρακάτω πίνακας σας περιγράφει συνοπτικά αυτές τις διαδικασίες.
+</p>
+
+<img src="./Lesson5/pic_5.jpg"/>
+		<p></p>
+
+<p>Ας βάλουμε όλους τους increment και decrement operators σε ένα απλό πρόγραμμα για να είναι εύκολο να συγκρίνουμε
+	τι πέρνουμε σαν αποτέλεσμα κάθε φορά ανάλογα με την θέση τους σε σχέση με την μεταβλητή.
+</p>
+
+
+
+<p><Strong>Program.cs</Strong></p>
+<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+<script src="https://gist.github.com/kassapoglou/9a18add1669d8e89d9e110cbef71184e.js"></script>
+<p><Strong>Output</Strong></p>
+	<img src="./Lesson5/pic_6.jpg"/>
+		<p></p>
+
+		<h2 class="content-h3">COMPARISON OPERATORS</h2>
+<p>Πολύ σύντομα θα αρχίσουμε να μελετάμε τα if-else statements όπου το πρόγραμμα μας με βάση την συνθήκη
+	που θα ορίσουμε θα αποφασίζει ποιο μέρος του κώδικα θα πρέπει να εκτελεστεί. Μια συνθήκη στην C# δημιουργείτε 
+	χρησιμοποιώντας comparison operators που στην ουσία αυτό που εκτελούν είναι μια σύγκριση δύο όρων (αν είναι ίσοι, αν ο πρώτος όρος 
+	είναι μεγαλύτερος από τον δεύτερο, αν οι δύο όροι είναι διαφορετικοί κτλ.). Το αποτέλεσμα που επιστρέφει πάντα ένας comparison operator είναι true ή false.
+	Μπορείτε να βρείτε όλες τις σχετικές πληροφορίες στο documentation της C# <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators">(https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/comparison-operators)</a>
+</p>
+<img src="./Lesson5/pic_7.jpg"/>
+		<p></p>
+
+<p>Ας δούμε ένα απλό παράδειγμα στο οποίο χρησιμοποιούμε όλους τους comparison operators για να μπορέσουμε να καταλάβουμε 
+	καλύτερα πως κάθε comparison operator εκτελεί την σύγκριση μεταξύ των δύο όρων.
+</p>
+
+<p><Strong>Program.cs</Strong></p>
+<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+<script src="https://gist.github.com/kassapoglou/f20b9913daa7d3b788e7bda2aa4dbac9.js"></script>
+<p><Strong>Output</Strong></p>
+	<img src="./Lesson5/pic_8.jpg"/>
+		<p></p>
+
+
+
+
+
+
+
+
+								
+					
+							
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -300,111 +439,55 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 						<!-- sectionRow -->
-						<section class="sectionRow">
+						<!-- <section class="sectionRow">
 							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ C# COMPLETE COURSE</h2>
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
-								aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
+								aria-multiselectable="true"> -->
 								<!-- panel -->
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h3 class="panel-title fw-normal">
 											<a class="accOpener" role="button" data-parent="#accordion"
 												aria-expanded="false" aria-controls="collapseOne"
-												href="./lesson1_Creating_your_First_C_Sharp_App_using_Visual_Studio.html"
-												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Creating your first C# App using Visual Studio</a>
-											<span class="accOpenerCol">
+												href="https://groundofcode.blogspot.com/2022/01/1-python-installation.html"
+												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Python Installation in Windows</a>
+											<span class="accOpenerCol"> -->
 
 												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-											</span>
+											<!-- </span> -->
 											<!--<span class="accOpenerCol hd-phone">
 													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 													<time datetime="2011-01-12" class="timeCount">17 Min</time>
 												</span>-->
-											</a>
+											<!-- </a>
 										</h3>
 
-									</div>
+									</div> -->
 
 
 									<!-- collapseOne -->
 
-								</div>
+								<!-- </div> -->
 
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingOne">
 									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson2_Exploring_the_System_Console_class.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Exploring the System.Console class</a>
-											<span class="accOpenerCol">
+										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="https://groundofcode.blogspot.com/2022/01/enothta-2-python-strings-string.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Python Strings and Comments</a>
+											<span class="accOpenerCol"> -->
 
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
+								<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
+								<!-- </span> -->
+								<!--<span class="accOpenerCol hd-phone">
 												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-								 </a>
-									</h3> -->
+											</span>-->
+								<!-- </a>
+									</h3>
 									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson3_variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - Variables</a>
-												<span class="accOpenerCol">
-	
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-									 </a>
-										</h3> -->
-										</div>
-									</div>
-
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson4_primitive_types.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Primitive Types</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-										
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson5_operators_part1.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Operators (Part 1)</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
+								</div> -->
 
 								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
@@ -918,10 +1001,10 @@
 
 				<!-- panel -->
 
-			</div>
+			<!-- </div>
 
 
-			</section>
+			</section> -->
 
 
 			<!-- sectionRow -->
@@ -1045,12 +1128,12 @@
 										class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 								</div>
 							</a>
-						</li>	
-						
+						</li>
+
 						<li>
 							<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 								<div class="alignleft">
-									<img src="./images/javascript.jpeg" alt="JavaScript Complete Course">
+									<img src="./images/javascript.jpeg" alt="JavasSript δωρεάν μαθήματα">
 								</div>
 								<div class="description-wrap">
 									<h4>JAVASCRIPT Complete Course</h4>
@@ -1059,7 +1142,6 @@
 								</div>
 							</a>
 						</li>
-						
 						<!--<li>
 									<a href="#">
 										<div class="alignleft">
@@ -1154,13 +1236,14 @@
 											</div>
 										</a>
 									</li>
+
 									<li>
 										<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 											<div class="alignleft">
-												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JavaScript">
+												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JAVASCRIPT">
 											</div>
 											<div class="description-wrap">
-												<h4>Μαθαίνω JavaScript Προγραμματισμό</h4>
+												<h4>Μαθαίνω JAVASCRIPT Προγραμματισμό</h4>
 												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 											</div>
 										</a>
@@ -1190,7 +1273,7 @@
 					</ul>
 				</div>
 				<nav class="col-xs-12 col-sm-6 col-md-3 col">
-					<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+					<h3>ΣΥΝΔΕΣΜΟΙ</h3>
 					<!-- fooer navigation -->
 					<ul class="fooer-navigation list-unstyled">
 						<!--<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
