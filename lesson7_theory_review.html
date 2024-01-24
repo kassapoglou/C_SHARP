@@ -14,7 +14,7 @@
 	<!-- set the Keyword -->
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="C#, C Sharp, ASP.NET CORE, .NET CORE, .NET, δωρεάν, seminaria C#, mathimata C#,
-               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#" />
+               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#. ADO.NET, EntityFramework" />
 	<meta name="author" content="Michail Kassapoglou" />
 	<!-- set the page title -->
 	<title>Δωρεάν Μαθήματα C#</title>
@@ -33,6 +33,7 @@
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -43,6 +44,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 
 <body>
@@ -92,7 +94,7 @@
 							<!-- logo -->
 							<div class="logo">
 								<a href="https://kassapoglou.github.io/main/">
-									<!--<img src="images/logo.png" alt="KASSAPOGLOU">-->
+									<!-- <img src="images/logo.png" alt="KASSAPOGLOU"> -->
 									<h1>KASSAPOGLOU</h1>
 								</a>
 							</div>
@@ -128,6 +130,7 @@
 												<!--<li><a href="course-single.html">Course Single</a></li>-->
 											</ul>
 										</li>
+										
 										<li class="dropdown">
 											<a href="#">WEB DEVELOPMENT</a>
 											<ul class="dropdown-menu">
@@ -209,7 +212,7 @@
 				<div class="container">
 					<!-- breadcrumb -->
 					<ol class="breadcrumb">
-						<li><a href="#">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/csharp/csharp.html">C#</a></li>
 						<!-- <li class="active">C#</li> -->
 					</ol>
@@ -267,27 +270,115 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/c_Sharp_pic.jpg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Θέλετε να κατανοήσετε από την αρχή και σωστά την γλώσσα προγραμματισμού C# και έννοιες όπως 
-							μεταβλητές (variables), τελεστές (operators), και δηλώσεις επιλογής (selection statements); 
-							Εάν «ΝΑΙ» τότε αυτή η σειρά δωρεάν μαθημάτων στην γλώσσα προγραμματισμού C# είναι για εσάς.</p>
+						<h2 class="content-h3">ΕΝΟΤΗΤΑ 7 - THEORY REVIEW</h2>
+						<h2 class="content-h3">INTRODUCTION</h2>
+						<p>Σε αυτό το δωρεάν μάθημα C# θα αναλύσουμε ένα ολοκληρωμένο πρόγραμμα το οποίο περιέχει
+							αρκετά στοιχεία από την θεωρία που έχουμε καλύψει μέχρι τώρα. Πιο συγκεκριμένα, θα δούμε
+							πως μπορούμε να χρησιμοποιήσουμε μερικούς από τους arithmetic operators για να διαιρέσουμε
+							τα δευτερόλεπτα σε ημέρες, ώρες, λεπτά, και δευτερόλεπτα. Το πρόγραμμα μπορεί να είναι απλό
+							στη δομή και στη λογική του είναι όμως ένα πρώτο βήμα στην δημιουργία ολοκληρωμένων εφαρμογών.
+						</p>
+						<h2 class="content-h3">WHAT WE NEED TO UNDERSTAND</h2>
+<p>Σε κάθε πρόγραμμα, όσο απλό ή πολύπλοκο, το πρώτο βήμα είναι να κατανοήσουμε τι ακριβώς μας ζητείται να
+	δημιουργήσουμε. Όσο καλός προγραμματιστής και αν είναι κάποιος, δεν θα μπορέσει να καλύψει τις ανάγκες του
+εκάστοτε πελάτη εάν δεν καταλάβει στον απόλυτο βαθμό τις απαιτήσεις της εφαρμογής. Στο δικό μας παράδειγμα,
+θα δεχτούμε ένα μεγάλο ακέραιο αριθμό που θα αντιπροσωπεύει δευτερόλεπτα. Αυτό που πρέπει να πετύχουμε είναι να 
+δείξουμε σε πόσες ημέρες, ώρες, λεπτά και δευτερόλεπτα αντιστοιχούν. </p>
 
-						<p>Αυτή η ολοκληρωμένη σειρά μαθημάτων θα σας διδάξει τις βασικές αρχές της γλώσσας προγραμματισμού 
-							C# στο .NET από την αρχή. Θα οδηγηθείτε σε μια προσεκτικά επιλεγμένη προσέγγιση για αρχάριους 
-							στην εκμάθηση των βασικών αρχών προγραμματισμού C#.</p>
+<p>Το δεύτερο βήμα είναι να καταλάβουμε τον αλγόριθμο ή αλγόριθμούς που θα χρειαστούμε για να κάνουμε τις απαραίτητες πράξεις.
+	Με άλλα λόγια ξέρουμε πως να βρίσκουμε ημέρες από δευτερόλεπτα; άν όχι τότε θα πρέπει να βρούμε πως εκτελείται αυτή η 
+	πράξη και μετά να προχωρήσουμε στην ανάπτυξη του κώδικα.
+</p>
+<h2 class="content-h3">SECONDS TO DAYS-HOURS-MINUTES-SECONDS CONVERTER</h2>
+<p>Θεωρώ ότι θα είναι ευκολότερο να γράψουμε πρώτα όλο τον κώδικα και να δούμε το αποτέλεσμα και μετά να το αναλύσουμε 
+	γραμμή προς γραμμή.
+</p>
+		
+	<p><Strong>Program.cs</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/b952840d6c9bf0475d99f32eb7214b60.js"></script>
+	<p><Strong>Output</Strong></p>
+	<img src="./Lesson7/pic_1.jpg" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
 
-						<p>Η σχεδίαση των δωρεάν μαθημάτων C# έχει γίνει με τέτοιο τρόπο ώστε να εξυπηρετεί δύο διαφορετικές 
-							ομάδες: τους απόλυτα αρχάριους που είναι εντελώς καινούργιοι στη C# και στο .NET παρέχοντας 
-							τους μια γερή βάση στον προγραμματισμό, και στους προγραμματιστές που προέρχονται από άλλες 
-							γλώσσες προγραμματισμού και αναζητούν να μάθουν τη σύνταξη της C# είτε για προσωπική είτε για 
-							επαγγελματική ανάπτυξη κώδικα.</p>
+<p>Το πρόγραμμα μας ξεκινάει με την δήλωση μιας μεταβλητής που ορίζει τον αριθμό των δευτερολέπτων που πρέπει να διαιρέσουμε.</p>
+<p><strong>int seconds = 288970;</strong></p>
 
-						<p>Δεν απαιτείται προηγούμενη γνώση C# ή .NET, καθώς το μάθημα καλύπτει όλα τα απαραίτητα 
-							στοιχεία για να ξεκινήσετε με τις βασικές αρχές προγραμματισμού σωστά και μεθοδικά. </p>
+<p>Μετά δημιουργούμε ένα αντίγραφο της αρχικής τιμής αναθέτοντας την σε μια δεύτερη μεταβλητή.</p>
+<p><strong>int remaining_seconds = seconds;</strong></p>
 
-						<p>Συνιστάται η πρόσβαση σε περιβάλλοντα ανάπτυξης όπως το Visual Studio Code, το Visual 
-							Studio ή οποιοδήποτε IDE που υποστηρίζει C#.</p>
+<p>Ύστερα δημιουργούμε μια μεταβλητή που αντιπροσωπεύει τα δευτερόλεπτα που υπάρχουν σε ένα λεπτό.</p>
+<p><strong> int seconds_per_minute = 60;</strong></p>
+
+<p>Ακολουθούμε την ίδια λογική για να αντιπροσωπεύσουμε τα δευτερόλεπτα που υπάρχουν σε μια ώρα και μια μέρα αντίστοιχα.</p>
+<p><strong>int seconds_per_hour = 60 * 60;</strong></p>
+<p><strong>int seconds_per_day = 24 * 60 * 60;</strong></p>
+
+<p>Ο λόγος που αναθέτουμε αυτές τις τιμές στις μεταβλητές στην αρχή του προγράμματος μας είναι γιατί
+	θα είναι πιο εύκολα κατανοητός και μαζεμένος ο κώδικας μας όταν κάνουμε πράξεις με μεταβλητές παρά όταν εκτελούμε όλους αυτούς τους
+	πολλαπλασιασμούς με τους αριθμούς. 
+</p>
+
+<p>Η πρώτη μας πράξη είναι η διαίρεση ανάμεσα στο συνολικό αριθμό των δευτερολέπτων και τα δευτερόλεπτα που περιέχονται σε μια ημέρα.
+	 Η διαίρεση γίνεται ανάμεσα στο αντίγραφο των δευτερολέπτων που δημιουργήσαμε και την seconds_per_day έτσι ώστε να παραμείνει
+άθικτος ο αρχικός αριθμός των δευτερολέπτων. Στην μεταβλητή days θα ανατεθεί το αποτέλεσμα της διαίρεσης που στην ουσία είναι ο 
+αριθμός των ημερών που περιέχεται στον αριθμό των δευτερολέπτων που μας δόθηκαν. 
+</p>
+<p><strong> int days = remaining_seconds / seconds_per_day;</strong></p>
+
+<p>Αφού υπολογίσαμε τις ημέρες, θα πρέπει τώρα να υπολογίσουμε πόσα δευτερόλεπτα μας έχουν απομείνει που δεν είναι 
+	αρκετά να μετατραπούν σε ημέρες όμως μπορούν να μετατραπούν σε ώρες. Αφαιρούμε λοιπόν από τον αρχικό αριθμό των δευτερολέπτων 
+	των αριθμό των ημερών αφού τις μετατρέπουμε σε δευτερόλεπτα έτσι ώστε να γίνει η αφαίρεση με ίδιες μονάδες. Το αποτέλεσμα
+	της αφαίρεσης το αναθέτουμε στην ίδια μεταβλητή.
+</p>
+<p><strong>  remaining_seconds -= days * seconds_per_day;</strong></p>
+
+<p>Τώρα που έχουμε τον υπόλοιπο αριθμό των δευτερολέπτων, αφού αφαιρέσαμε τις ημέρες, τον διαιρούμε με 
+	τον αριθμό των δευτερολέπτων που περιέχονται σε μια ώρα. Το αποτέλεσμα το αναθέτουμε στην μεταβλητή hours.
+</p>
+<p><strong> int hours = remaining_seconds / seconds_per_hour;</strong></p>
+
+<p>Αφαιρούμε για άλλη μια φορά από τον ολικό αριθμό των δευτερολέπτων και τα δευτερόλεπτα που περιέχονται στις ώρες
+	που μόλις υπολογίσταμε. Το αποτέλεσμα το αναθέτουμε ξανά πίσω στην ίδια μεταβλητή για να γνωρίζουμε πόσα δευτερόλεπτα μας έχουν απομείνει
+	για να συνεχίσουμε.
+</p>
+<p><strong>remaining_seconds -= hours * seconds_per_hour;</strong></p>
+
+<p>Με την ίδια λογική ακριβώς συνεχίζουμε για να βρούμε πόσα λεπτά περιέχονται στα δευτερόλεπτα που μας έχουν απομείνει και αυτά
+	που δεν αρκούν για να δημιουργήσουν λεπτά θα απομείνουν σαν δευτερόλεπτα.
+</p>
+<p><strong>int minutes = remaining_seconds / seconds_per_minute;</strong></p>
+<p><strong>remaining_seconds -= minutes * seconds_per_minute;</strong></p>
+
+
+<p>Τέλος δείχνουμε ένα ολοκληρωμένο και κατανοητό μήνυμα στον τελικό χρήστη που του δείχνουμε
+	ακριβώς την αντιστοιχία των δευτερολέπτων στις αντίστοιχες χρονικές μονάδες.
+</p>
+<p><strong> System.Console.WriteLine(days + " days, " + hours + " hours, " + minutes + " minutes, " + remaining_seconds + " seconds");</strong></p>
+
+<p>Ελπίζω μέσα από αυτό το πρόγραμμα να καταλάβετε πως συνήθως σκεφτόμαστε πριν ξεκινήσουμε να γράφουμε κώδικα
+	και τι βήματα χρειάζεται να πάρετε για να προσεγγίσετε τους αλγόριθμους που απαιτεί η επίλυση του προβλήματος που 
+	προσπαθείτε να λύσετε. 
+</p>
+
+								
+					
+							
 						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -300,148 +391,55 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 						<!-- sectionRow -->
-						<section class="sectionRow">
+						<!-- <section class="sectionRow">
 							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ C# COMPLETE COURSE</h2>
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
-								aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
+								aria-multiselectable="true"> -->
 								<!-- panel -->
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h3 class="panel-title fw-normal">
 											<a class="accOpener" role="button" data-parent="#accordion"
 												aria-expanded="false" aria-controls="collapseOne"
-												href="./lesson1_Creating_your_First_C_Sharp_App_using_Visual_Studio.html"
-												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Creating your first C# App using Visual Studio</a>
-											<span class="accOpenerCol">
+												href="https://groundofcode.blogspot.com/2022/01/1-python-installation.html"
+												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Python Installation in Windows</a>
+											<span class="accOpenerCol"> -->
 
 												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-											</span>
+											<!-- </span> -->
 											<!--<span class="accOpenerCol hd-phone">
 													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 													<time datetime="2011-01-12" class="timeCount">17 Min</time>
 												</span>-->
-											</a>
+											<!-- </a>
 										</h3>
 
-									</div>
+									</div> -->
 
 
 									<!-- collapseOne -->
 
-								</div>
+								<!-- </div> -->
 
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingOne">
 									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson2_Exploring_the_System_Console_class.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Exploring the System.Console class</a>
-											<span class="accOpenerCol">
+										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="https://groundofcode.blogspot.com/2022/01/enothta-2-python-strings-string.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Python Strings and Comments</a>
+											<span class="accOpenerCol"> -->
 
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
+								<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
+								<!-- </span> -->
+								<!--<span class="accOpenerCol hd-phone">
 												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-								 </a>
-									</h3> -->
+											</span>-->
+								<!-- </a>
+									</h3>
 									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson3_variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - Variables</a>
-												<span class="accOpenerCol">
-	
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-									 </a>
-										</h3> -->
-										</div>
-									</div>
-
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson4_primitive_types.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Primitive Types</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-										
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson5_operators_part1.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Operators (Part 1)</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-															
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h3 class="panel-title fw-normal">
-									<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson6_operators_part2.html" style="color:blue;">ΕΝΟΤΗΤΑ 6 - Operators (Part 2)</a>
-										<span class="accOpenerCol">
-
-							<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-							<!-- </span>
-							<span class="accOpenerCol hd-phone">
-											<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-											<time datetime="2011-01-12" class="timeCount">17 Min</time>
-										</span>
-								</a>
-								</h3> -->
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson6_operators_part2.html" style="color:blue;">ΕΝΟΤΗΤΑ 7 - Theory Review</a>
-											<span class="accOpenerCol">
-	
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
-												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-									</a>
-									</h3> -->
-									</div>
-								</div>
+								</div> -->
 
 								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
@@ -955,10 +953,10 @@
 
 				<!-- panel -->
 
-			</div>
+			<!-- </div>
 
 
-			</section>
+			</section> -->
 
 
 			<!-- sectionRow -->
@@ -1082,12 +1080,12 @@
 										class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 								</div>
 							</a>
-						</li>	
-						
+						</li>
+
 						<li>
 							<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 								<div class="alignleft">
-									<img src="./images/javascript.jpeg" alt="JavaScript Complete Course">
+									<img src="./images/javascript.jpeg" alt="JavasSript δωρεάν μαθήματα">
 								</div>
 								<div class="description-wrap">
 									<h4>JAVASCRIPT Complete Course</h4>
@@ -1096,7 +1094,6 @@
 								</div>
 							</a>
 						</li>
-						
 						<!--<li>
 									<a href="#">
 										<div class="alignleft">
@@ -1191,13 +1188,14 @@
 											</div>
 										</a>
 									</li>
+
 									<li>
 										<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 											<div class="alignleft">
-												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JavaScript">
+												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JAVASCRIPT">
 											</div>
 											<div class="description-wrap">
-												<h4>Μαθαίνω JavaScript Προγραμματισμό</h4>
+												<h4>Μαθαίνω JAVASCRIPT Προγραμματισμό</h4>
 												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 											</div>
 										</a>
@@ -1227,7 +1225,7 @@
 					</ul>
 				</div>
 				<nav class="col-xs-12 col-sm-6 col-md-3 col">
-					<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+					<h3>ΣΥΝΔΕΣΜΟΙ</h3>
 					<!-- fooer navigation -->
 					<ul class="fooer-navigation list-unstyled">
 						<!--<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
