@@ -14,7 +14,7 @@
 	<!-- set the Keyword -->
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="C#, C Sharp, ASP.NET CORE, .NET CORE, .NET, δωρεάν, seminaria C#, mathimata C#,
-               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#" />
+               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#. ADO.NET, EntityFramework" />
 	<meta name="author" content="Michail Kassapoglou" />
 	<!-- set the page title -->
 	<title>Δωρεάν Μαθήματα C#</title>
@@ -33,6 +33,7 @@
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -43,6 +44,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 
 <body>
@@ -92,7 +94,7 @@
 							<!-- logo -->
 							<div class="logo">
 								<a href="https://kassapoglou.github.io/main/">
-									<!--<img src="images/logo.png" alt="KASSAPOGLOU">-->
+									<!-- <img src="images/logo.png" alt="KASSAPOGLOU"> -->
 									<h1>KASSAPOGLOU</h1>
 								</a>
 							</div>
@@ -128,6 +130,7 @@
 												<!--<li><a href="course-single.html">Course Single</a></li>-->
 											</ul>
 										</li>
+										
 										<li class="dropdown">
 											<a href="#">WEB DEVELOPMENT</a>
 											<ul class="dropdown-menu">
@@ -209,7 +212,7 @@
 				<div class="container">
 					<!-- breadcrumb -->
 					<ol class="breadcrumb">
-						<li><a href="#">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/csharp/csharp.html">C#</a></li>
 						<!-- <li class="active">C#</li> -->
 					</ol>
@@ -267,27 +270,121 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/c_Sharp_pic.jpg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Θέλετε να κατανοήσετε από την αρχή και σωστά την γλώσσα προγραμματισμού C# και έννοιες όπως 
-							μεταβλητές (variables), τελεστές (operators), και δηλώσεις επιλογής (selection statements); 
-							Εάν «ΝΑΙ» τότε αυτή η σειρά δωρεάν μαθημάτων στην γλώσσα προγραμματισμού C# είναι για εσάς.</p>
+						<h2 class="content-h3">ΕΝΟΤΗΤΑ 8 - CONDITIONAL CONTROL STATEMENTS (IF-ELSE)</h2>
+						<h2 class="content-h3">INTRODUCTION</h2>
+						<p>Σε αυτό το δωρεάν μάθημα C#, θα προσθέσουμε την ικανότητα στο πρόγραμμα μας 
+							να εκτελεί ένα μέρος του κώδικα μόνο όταν ικανοποιείται μια συγκεκριμένη συνθήκη. 
+							Αυτή η ικανότητα του κώδικα να ελέγχει τη ροή εκτέλεσης των εντολών περιγράφεται 
+							από το <strong>if-else</strong> statement και ανήκει στην γενικότερη 
+							κατηγορία των <strong>conditional control statements</strong>.
+						</p>
+<h2 class="content-h3">SIMPLE - if</h2>
+<p>Ας υποθέσουμε λοιπόν ότι θέλουμε να δημιουργήσουμε ένα πρόγραμμα το οποίο, αν ο μαθητής έχει
+	πάρει καλό βαθμό στο exam, εμφανίζει ένα έξτρα μήνυμα, ενώ αν δεν έχει πάρει καλό βαθμό δεν 
+	εμφανίζει το έξτρα μήνυμα και απλά συνεχίζεται κανονικά η εκτέλεση του υπόλοιπου κώδικα.
+</p>
+<p>Στην παραπάνω περιγραφή, καταλαβαίνουμε ότι ο κώδικας μας θα πρέπει να πάρει μια απόφαση (αν θα 
+	δείξει το μήνυμα ή όχι) βασιζόμενο σε μια συνθήκη (αν ο βαθμός του μαθητή είναι υψηλός ή όχι). Αν 
+	το αποτέλεσμα της συνθήκη μέσα στην οποία ελέγχεται ο βαθμός του exam είναι true τότε θα εμφανιστεί 
+	το έξτρα μήνυμα ειδάλλως αν είναι false δεν θα εκτελεστεί αυτό το μέρος του κώδικα. 
+</p>
+<p>Αυτός ο τρόπος γραφής του κώδικα ανήκει στην κατηγορία των conditional control statements 
+	και αντιπροσωπεύεται πρακτικά με την εντολή if.
+</p>
+<img src="./Lesson8/pic_1.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+<p>Όπως ήδη έχετε παρατηρήσει από την παραπάνω εικόνα, ξεκινάμε με την εντολή <strong>if</strong> 
+και αμέσως μετά ακολουθεί, μέσα σε παρενθέσεις, η συνθήκη της οποίας το αποτέλεσμα θα κρίνει 
+την ροή εκτέλεσης του κώδικα. Αν το αποτέλεσμα 
+της συνθήκης είναι true τότε ο κώδικας που υπάρχει ανάμεσα στα άγκιστρα θα εκτελεστεί, ειδάλλως, αν 
+η συνθήκη μας επιστρέψει την τιμή false, ο κώδικας μέσα στα άγκιστρα θα αγνοηθεί. Ας δούμε ένα 
+απλό παράδειγμα που υλοποιεί αυτή την απλή λογική.</p>
 
-						<p>Αυτή η ολοκληρωμένη σειρά μαθημάτων θα σας διδάξει τις βασικές αρχές της γλώσσας προγραμματισμού 
-							C# στο .NET από την αρχή. Θα οδηγηθείτε σε μια προσεκτικά επιλεγμένη προσέγγιση για αρχάριους 
-							στην εκμάθηση των βασικών αρχών προγραμματισμού C#.</p>
+	<p><Strong>Program.cs</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/5cd82c87a57d12a1c7634acc29f1bc52.js"></script>
+	<p><Strong>Output</Strong></p>
+	<img src="./Lesson8/pic_2.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+				
+<p>Αν αλλάξετε την τιμή της μεταβλητής σε ένα αριθμό χαμηλότερο του 90 τότε δεν 
+	θα εμφανιστεί το μήνυμα γιατί η συνθήκη μέσα στην παρένθεση θα είναι false οπότε
+	αγνοείται εντελώς ο κώδικας που ανήκει στο if.
+</p>						
+<h2 class="content-h3">if - else STATEMENT</h2>
+<p>Η απλή μορφή του if μας έδωσε μια πρώτη και χρήσιμη γεύση ελέγχου της ροής ενός 
+	προγράμματος. Όμως τις περισσότερες φορές επιθυμούμε να έχουμε πλήρη έλεγχο της 
+	ροής εκτέλεσης εκτελώντας κώδικα όχι μόνο όταν η συνθήκη είναι true αλλά 
+	και όταν η συνθήκη είναι false. Με άλλα λόγια, θα επιθυμούσαμε ο τελικός χρήστης 
+	να λάβει ένα μήνυμα και στα δύο αποτελέσματα που μπορεί να επιστρέψει η συνθήκη. Φυσικά το μήνυμα 
+	θα είναι διαφορετικό για κάθε περίπτωση. Επειδή το if εκτελεί τον κώδικα μόνο όταν η συνθήκη 
+	είναι true, πρέπει να προσθέσουμε ένα ακόμα statement που θα εκτελεί κώδικα όταν η συνθήκη 
+	είναι false. Αυτό το statement είναι το else και δηλώνεται αμέσως μετά από το if.
+</p>
+<img src="./Lesson8/pic_3.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
 
-						<p>Η σχεδίαση των δωρεάν μαθημάτων C# έχει γίνει με τέτοιο τρόπο ώστε να εξυπηρετεί δύο διαφορετικές 
-							ομάδες: τους απόλυτα αρχάριους που είναι εντελώς καινούργιοι στη C# και στο .NET παρέχοντας 
-							τους μια γερή βάση στον προγραμματισμό, και στους προγραμματιστές που προέρχονται από άλλες 
-							γλώσσες προγραμματισμού και αναζητούν να μάθουν τη σύνταξη της C# είτε για προσωπική είτε για 
-							επαγγελματική ανάπτυξη κώδικα.</p>
+<p>Στο παρακάτω παράδειγμα, έχουμε προσθέσει και το else statement οπότε ο τελικός χρήστης θα λάβει, 
+	ανάλογα αν η βαθμολογία του είναι υψηλότερη ή χαμηλώτερη από το 90, διαφορετικό μήνυμα 
+για κάθε μια από τις δύο περιπτώσεις. </p>
+<p><Strong>Program.cs</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/7f96f3faf5b530325d0c4baf7a32c1d4.js"></script>
+	<p><Strong>Output</Strong></p>
+	<img src="./Lesson8/pic_4.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
 
-						<p>Δεν απαιτείται προηγούμενη γνώση C# ή .NET, καθώς το μάθημα καλύπτει όλα τα απαραίτητα 
-							στοιχεία για να ξεκινήσετε με τις βασικές αρχές προγραμματισμού σωστά και μεθοδικά. </p>
+<h2 class="content-h3">else  - if MULTIPLE STATEMENTS</h2>
+<p>Έχουμε ενισχύσει αρκετά τον κώδικα μας, όμως ακόμα υπάρχει ένα κενό στην λογική μας - πως μπορούμε 
+	να ελέγξουμε περισσότερες από δύο τιμές? Για παράδειγμα, θέλουμε να αντιπροσωπεύσουμε τον βαθμό που
+	έχει πάρει ο μαθητής στο exam με ένα γράμμα. Σε αυτή την περίπτωση θα πρέπει να κάνουμε πολλαπλούς ελέγχους γιατί 
+	θα πρέπει να ελέγξουμε αν η βαθμολογία είναι μεγαλύτερη του 90, εάν όχι εάν είναι μεγαλύτερη του 80 κτλ. 
+	Για να το υλοποιήσουμε αυτό δεν έχουμε παρά να συνδυάσουμε πολλαπλά if-else statements. Το θετικό αυτής
+	της προσέγγισης είναι ότι όλα τα if-else αντιμετωπίζονται σαν μια κοινή ομάδα ελέγχου. Όταν μια 
+	από τις συνθήκες είναι true τότε θα εκτελεστεί ο κώδικα της εκάστοτε συνθήκης και το πρόγραμμα θα βγει έξω από όλο
+	αυτό το σύμπλεγμα των if-else συνεχίζωντας με τον υπόλοιπο κώδικα.
+</p>
 
-						<p>Συνιστάται η πρόσβαση σε περιβάλλοντα ανάπτυξης όπως το Visual Studio Code, το Visual 
-							Studio ή οποιοδήποτε IDE που υποστηρίζει C#.</p>
-						
+<img src="./Lesson8/pic_5.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+<p>Στο παρακάτω παράδειγμα θα συνεχίσουμε να δουλεύουμε στην έννοια του μαθητή και τους βαθμούς του 
+	σαν σενάριο για τον απλούστατο λόγο ότι είναι εύκολο σαν έννοια να το ακολουθήσετε. Ένα ακόμη σημείο
+	που θα πρέπει να προσέξετε είναι η χρήση του τελευταίου else. Αυτό καλύπτει οποιαδήποτε άλλη περίπτωση
+	που δεν έχουμε ελέγξει από τα if-else statements πριν από αυτό. Με άλλα λόγια, για οποιαδήποτε άλλο αριθμό 
+	που είναι μικρότερος από το 60 ο μαθητής θα λάβει την ίδια βαθμολογία που είναι F.
+</p>
+
+<p><Strong>Program.cs</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/99ad635c1eac41478e3ac85df72a7aaf.js"></script>
+	<p><Strong>Output</Strong></p>
+	<img src="./Lesson8/pic_6.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+
+<h2 class="content-h3">nested if STATEMENTS</h2>
+<p>Το τελευταίο σημείο που μας έχει μείνει να καλύψουμε είναι όταν έχουμε μια if-else λογική 
+	μέσα σε μια άλλη. Αυτό το είδος σύνταξης ονομάζεται nested-if και μπορεί σε κάποιες περιπτώσεις 
+	να μας φανεί χρήσιμο.  
+</p>
+<p><Strong>Program.cs</Strong></p>
+	<link href="https://cdn.rawgit.com/Killercodes/281792c423a4fe5544d9a8d36a4430f2/raw/36c2eb3e0c44133880485a143717bda9d180f2c1/GistDarkCode.css" rel="stylesheet" type="text/css">
+	<script src="https://gist.github.com/kassapoglou/9e18bfab9356351eb14931f02c35a415.js"></script>
+	<p><Strong>Output</Strong></p>
+	<img src="./Lesson8/pic_7.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -300,167 +397,55 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 						<!-- sectionRow -->
-						<section class="sectionRow">
+						<!-- <section class="sectionRow">
 							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ C# COMPLETE COURSE</h2>
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
-								aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
+								aria-multiselectable="true"> -->
 								<!-- panel -->
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h3 class="panel-title fw-normal">
 											<a class="accOpener" role="button" data-parent="#accordion"
 												aria-expanded="false" aria-controls="collapseOne"
-												href="./lesson1_Creating_your_First_C_Sharp_App_using_Visual_Studio.html"
-												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Creating your first C# App using Visual Studio</a>
-											<span class="accOpenerCol">
+												href="https://groundofcode.blogspot.com/2022/01/1-python-installation.html"
+												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Python Installation in Windows</a>
+											<span class="accOpenerCol"> -->
 
 												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-											</span>
+											<!-- </span> -->
 											<!--<span class="accOpenerCol hd-phone">
 													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 													<time datetime="2011-01-12" class="timeCount">17 Min</time>
 												</span>-->
-											</a>
+											<!-- </a>
 										</h3>
 
-									</div>
+									</div> -->
 
 
 									<!-- collapseOne -->
 
-								</div>
+								<!-- </div> -->
 
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingOne">
 									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson2_Exploring_the_System_Console_class.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Exploring the System.Console class</a>
-											<span class="accOpenerCol">
+										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="https://groundofcode.blogspot.com/2022/01/enothta-2-python-strings-string.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Python Strings and Comments</a>
+											<span class="accOpenerCol"> -->
 
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
+								<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
+								<!-- </span> -->
+								<!--<span class="accOpenerCol hd-phone">
 												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-								 </a>
-									</h3> -->
+											</span>-->
+								<!-- </a>
+									</h3>
 									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson3_variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - Variables</a>
-												<span class="accOpenerCol">
-	
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-									 </a>
-										</h3> -->
-										</div>
-									</div>
-
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson4_primitive_types.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Primitive Types</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-										
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson5_operators_part1.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Operators (Part 1)</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-															
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h3 class="panel-title fw-normal">
-									<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson6_operators_part2.html" style="color:blue;">ΕΝΟΤΗΤΑ 6 - Operators (Part 2)</a>
-										<span class="accOpenerCol">
-
-							<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-							<!-- </span>
-							<span class="accOpenerCol hd-phone">
-											<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-											<time datetime="2011-01-12" class="timeCount">17 Min</time>
-										</span>
-								</a>
-								</h3> -->
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson7_theory_review.html" style="color:blue;">ΕΝΟΤΗΤΑ 7 - Theory Review</a>
-											<span class="accOpenerCol">
-	
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
-												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-									</a>
-									</h3> -->
-									</div>
-								</div>
-
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson8_conditional_control_statements.html" style="color:blue;">ΕΝΟΤΗΤΑ 8 - Conditional Control Statements</a>
-												<span class="accOpenerCol">
-		
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-										</a>
-										</h3> -->
-										</div>
-									</div>
-
+								</div> -->
 
 								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
@@ -974,10 +959,10 @@
 
 				<!-- panel -->
 
-			</div>
+			<!-- </div>
 
 
-			</section>
+			</section> -->
 
 
 			<!-- sectionRow -->
@@ -1101,12 +1086,12 @@
 										class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 								</div>
 							</a>
-						</li>	
-						
+						</li>
+
 						<li>
 							<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 								<div class="alignleft">
-									<img src="./images/javascript.jpeg" alt="JavaScript Complete Course">
+									<img src="./images/javascript.jpeg" alt="JavasSript δωρεάν μαθήματα">
 								</div>
 								<div class="description-wrap">
 									<h4>JAVASCRIPT Complete Course</h4>
@@ -1115,7 +1100,6 @@
 								</div>
 							</a>
 						</li>
-						
 						<!--<li>
 									<a href="#">
 										<div class="alignleft">
@@ -1210,13 +1194,14 @@
 											</div>
 										</a>
 									</li>
+
 									<li>
 										<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 											<div class="alignleft">
-												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JavaScript">
+												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JAVASCRIPT">
 											</div>
 											<div class="description-wrap">
-												<h4>Μαθαίνω JavaScript Προγραμματισμό</h4>
+												<h4>Μαθαίνω JAVASCRIPT Προγραμματισμό</h4>
 												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 											</div>
 										</a>
@@ -1246,7 +1231,7 @@
 					</ul>
 				</div>
 				<nav class="col-xs-12 col-sm-6 col-md-3 col">
-					<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+					<h3>ΣΥΝΔΕΣΜΟΙ</h3>
 					<!-- fooer navigation -->
 					<ul class="fooer-navigation list-unstyled">
 						<!--<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
