@@ -14,7 +14,7 @@
 	<!-- set the Keyword -->
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="C#, C Sharp, ASP.NET CORE, .NET CORE, .NET, δωρεάν, seminaria C#, mathimata C#,
-               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#" />
+               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#. ADO.NET, EntityFramework" />
 	<meta name="author" content="Michail Kassapoglou" />
 	<!-- set the page title -->
 	<title>Δωρεάν Μαθήματα C#</title>
@@ -33,6 +33,7 @@
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -43,6 +44,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 
 <body>
@@ -92,7 +94,7 @@
 							<!-- logo -->
 							<div class="logo">
 								<a href="https://kassapoglou.github.io/main/">
-									<!--<img src="images/logo.png" alt="KASSAPOGLOU">-->
+									<!-- <img src="images/logo.png" alt="KASSAPOGLOU"> -->
 									<h1>KASSAPOGLOU</h1>
 								</a>
 							</div>
@@ -129,6 +131,7 @@
 												<!--<li><a href="course-single.html">Course Single</a></li>-->
 											</ul>
 										</li>
+										
 										<li class="dropdown">
 											<a href="#">WEB DEVELOPMENT</a>
 											<ul class="dropdown-menu">
@@ -210,7 +213,7 @@
 				<div class="container">
 					<!-- breadcrumb -->
 					<ol class="breadcrumb">
-						<li><a href="#">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/csharp/csharp.html">C#</a></li>
 						<!-- <li class="active">C#</li> -->
 					</ol>
@@ -268,27 +271,192 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/c_Sharp_pic.jpg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Θέλετε να κατανοήσετε από την αρχή και σωστά την γλώσσα προγραμματισμού C# και έννοιες όπως 
-							μεταβλητές (variables), τελεστές (operators), και δηλώσεις επιλογής (selection statements); 
-							Εάν «ΝΑΙ» τότε αυτή η σειρά δωρεάν μαθημάτων στην γλώσσα προγραμματισμού C# είναι για εσάς.</p>
+						<h2 class="content-h3">ΕΝΟΤΗΤΑ 13 - CREATING CLASSES, FIELDS AND OBJECTS</h2>
+						<h2 class="content-h3">INTRODUCTION</h2>
+						<p>Σε αυτό το δωρεάν μάθημα C# θα δούμε βήμα προς βήμα πως δημιουργούμε μια κλάση που περιγράφει την γενική έννοια του
+							προιόντος, πως δημιουργούμε πεδία για να αποθηκεύσουμε τα χαρακτηριστικά του προιόντος, πως δημιουργούμε αντικείμενα από την κλάση
+							και τέλος πως αναθέτουμε τιμές στα χαρακτηριστικά του κάθε αντικειμένου.
+						</p>
 
-						<p>Αυτή η ολοκληρωμένη σειρά μαθημάτων θα σας διδάξει τις βασικές αρχές της γλώσσας προγραμματισμού 
-							C# στο .NET από την αρχή. Θα οδηγηθείτε σε μια προσεκτικά επιλεγμένη προσέγγιση για αρχάριους 
-							στην εκμάθηση των βασικών αρχών προγραμματισμού C#.</p>
+						<h2 class="content-h3">HOW TO CREATE A CLASS</h2>
+						<p>Ας υποθέσουμε πως θέλουμε να περιγράψουμε προγραμματιστικά την έννοια του προϊόντος. Δηλαδή προϊόντα όπως 
+							υπολογιστές, ηχεία, ακουστικά θα επιθυμούσαμε να μπορούμε να τα περιγράψουμε με κώδικα στο πρόγραμμα μας και 
+							κατά συνέπεια να τα επεξεργαστούμε.</p>
+						<p>Αυτός ακριβώς είναι ο σκοπός της κλάσης – να μπορούμε να περιγράψουμε προγραμματιστικά αντικείμενα από το 
+							φυσικό κόσμο μέσα στο πρόγραμμα μας. Οπότε είναι απολύτως λογικό να ξεκινήσουμε με το να δημιουργήσουμε 
+							μια κλάση. Αυτή θα είναι μια επιπλέον δεύτερη κλάση εκτός από εκείνη που περιέχει την Main( ) μέθοδο. Συνήθως 
+							δημιουργούμε την κλάση σε ένα αρχείο και από ένα άλλο αρχείο δημιουργούμε αντικείμενα από αυτές.</p>
+						<p>Πριν ξεκινήσουμε να αναλύουμε γραμμή προς γραμμή την δημιουργία κλάσεων και fields, ας δημιουργήσουμε 
+							ένα καινούργιο project στο Visual Studio ( που μπορείτε να το ονομάσετε ClassAndFields) ακολουθώντας 
+							τα βήματα που ήδη γνωρίζετε. Όπως κάθε project, έτσι και αυτό περιέχει ήδη μια κλάση με το όνομα 
+							Program.cs μέσα στο οποίο υπάρχει η μέθοδο Main από την οποία ξεκινάει η εκτέλεση του προγράμματος μας. </p>
+							<p></p>
+<p>Όπως αναφέραμε, δεν γράφουμε όλο τον κώδικα μιας εφαρμογής στο ίδιο αρχείο αλλά τον μοιράζουμε σε 
+	διαφορετικά αρχεία που αντιπροσωπεύουν κλάσεις. Για να δημιουργήσουμε μια καινούργια κλάση κάνουμε 
+	δεξί κλικ επάνω στο project και από το εμφανιζόμενο μενού επιλέγουμε <strong>Add</strong> και μετά <strong>class</strong>.</p>
+	<img src="./Lesson13/pic_1.jpg" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+<p>Από τις εμφανιζόμενες επιλογές επιλέγουμε πάλι <strong>Class</strong> και ονομάζουμε το αρχείο μας <strong>Product</strong>. Για 
+	να προστεθεί το αρχείο στο υπάρχον project πατάμε το κουμπί <strong>Add</strong>.</p>
+	<img src="./Lesson13/pic_2.jpg" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+<img src="./Lesson13/pic_3.jpg" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+<p>Για να ανοίξουμε το αρχείο Product.cs (όπως και κάθε αρχείο στο Visual Studio) απλά κάνουμε κλικ επάνω στο 
+	όνομα του αρχείου. Για να καταλάβουμε καλύτερα την θεωρία θα διαγράψουμε όλα τα περιεχόμενα του 
+	αρχείου γιατί πολύ απλά αυτή τη στιγμή δεν τα χρειαζόμαστε και θα είναι πιο εύκολo για εμάς να 
+	κατανοήσουμε την θεωρία των κλάσεων. Διαγράφουμε όλα τα στοιχεία λοιπόν που περιέχονται μέσα στο 
+	αρχείο Product.cs.</p>
+	<img src="./Lesson13/pic_4.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
 
-						<p>Η σχεδίαση των δωρεάν μαθημάτων C# έχει γίνει με τέτοιο τρόπο ώστε να εξυπηρετεί δύο διαφορετικές 
-							ομάδες: τους απόλυτα αρχάριους που είναι εντελώς καινούργιοι στη C# και στο .NET παρέχοντας 
-							τους μια γερή βάση στον προγραμματισμό, και στους προγραμματιστές που προέρχονται από άλλες 
-							γλώσσες προγραμματισμού και αναζητούν να μάθουν τη σύνταξη της C# είτε για προσωπική είτε για 
-							επαγγελματική ανάπτυξη κώδικα.</p>
+<p>Για να δημιουργήσουμε μια κλάση πρέπει να πρώτα να γράψουμε τη λέξη κλειδί <strong>class</strong> και αμέσως μετά το όνομα που 
+	επιθυμούμε να ονομάσουμε την κλάση μας. Η λέξη class δηλώνει στη C# ότι θέλουμε να δηλώσουμε την δημιουργία 
+	μιας καινούργιας κλάσης που θα έχει την δυνατότητα να δημιουργεί αντικείμενα. Τέλος ανοίγουμε και κλείνουμε 
+	ένα ζευγάρι άγκιστρα μέσα στα οποία θα ορίσουμε τα fields της κλάσης. Στο δικό μας παράδειγμα θα ονομάσουμε 
+	την κλάση μας <strong>Product</strong>.</p>
+	<img src="./Lesson13/pic_5.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
+<p>Ο ορισμός της κλάσης ακόμα δεν έχει ολοκληρωθεί. Μπροστά από την λέξη class θα πρέπει να ορίσουμε το access 
+	modifier δηλώνοντας είτε την λέξη <strong>public</strong> είτε την λέξη <strong>internal</strong>. Η λέξη public δηλώνει ότι 
+	οποιαδήποτε άλλη κλάση από το ίδιο project ή διαφορετικό project μπορεί να έχει πρόσβαση στα στοιχεία της κλάσης, ενώ η λέξη 
+	internal δηλώνει ότι μόνο κλάσεις από το ίδιο project θα μπορούν να έχουν πρόσβαση στα στοιχεία της κλάσης. Στο δικό μας 
+	παράδειγμα θα δηλώσουμε τον access modifier να είναι public. Αυτό σημαίνει ότι αν στο solution που δημιουργήσαμε με ένα 
+	project αργότερα προσθέσουμε και ένα δεύτερο project, τότε αυτό θα έχει πρόσβαση στην κλάση μας και δεν θα χρειαστεί να 
+	δημιουργήσουμε μια δεύτερη κλάση με τον ίδιο κώδικα. Όταν αργότερα δούμε το πως μπορούμε να προσθέσουμε ένα δεύτερο project 
+	μέσα στο ίδιο solution τότε θα σας είναι απόλυτα κατανοητή αυτή η έννοια. Για τώρα απλά προσθέτουμε την λέξη public 
+	μπροστά από την λέξη class για να ολοκληρωθεί ο ορισμός της κλάσης.</p>
+	<img src="./Lesson13/pic_6.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
 
-						<p>Δεν απαιτείται προηγούμενη γνώση C# ή .NET, καθώς το μάθημα καλύπτει όλα τα απαραίτητα 
-							στοιχεία για να ξεκινήσετε με τις βασικές αρχές προγραμματισμού σωστά και μεθοδικά. </p>
+<p>Αν δεν προσθέσουμε κανένα access modifier στη κλάση, αυτόματα η C# θεωρεί ότι ισχύει ο internal 
+	access modifier. Επίσης η γραμμή ορισμού της κλάσης μπορεί να περιέχει και άλλες λέξεις όπως static, abstract 
+	κτλ τις οποίες όμως θα αναλύσουμε σε μελλοντικά δωρεάν μαθήματα C#. Για τώρα μας αρκεί ο βασικός ορισμός της κλάσης.</p>
 
-						<p>Συνιστάται η πρόσβαση σε περιβάλλοντα ανάπτυξης όπως το Visual Studio Code, το Visual 
-							Studio ή οποιοδήποτε IDE που υποστηρίζει C#.</p>
-						
+	<h2 class="content-h3">CREATING FIELDS</h2>
+<p>Όπως ήδη έχουμε αναφέρει στο προηγούμενο δωρεάν μάθημα C#, μια κλάση είναι ο τρόπος να περιγράψουμε 
+	προγραμματιστικά ένα αντικείμενο από το φυσικό κόσμο. Για να περιγράψουμε τα χαρακτηριστικά του αντικειμένου 
+	δηλώνουμε μεταβλητές μέσα στην κλάση που ονομάζονται <strong>fields</strong>. Κάθε δήλωση ενός field περιέχει τον 
+	access modifier (που στο δικό μας παράδειγμα θα παραμείνει public), το data type της μεταβλητής και τέλος το 
+	όνομα της. Υπάρχουν και κάποιες άλλες προαιρετικές λέξεις που μπορούμε να προσθέσουμε αλλά θα τις δούμε σε 
+	μελλοντικά δωρεάν μαθήματα C#. Για τώρα θα παραμείνουμε στην απλή δήλωση των fields μέσα σε μια κλάση.</p>
+
+<p>Θέλουμε λοιπόν να περιγράψουμε το αντικείμενο προϊόν προγραμματιστικά. Δεν αναφερόμαστε σε ένα συγκεκριμένο 
+	προϊόν (computer, mobile, κτλ) αλλά στα χαρακτηριστικά που έχουν όλα τα προϊόντα που πουλάμε. </p>
+
+<p>Για αρχή γνωρίζουμε ότι κάθε προϊόν έχει ένα μοναδικό αριθμό τον οποίο χρησιμοποιούμε για να βρούμε το κάθε 
+	αντικείμενο στην αποθήκη. Μπορούμε να ονομάσουμε την μεταβλητή που περιγράφει αυτό το χαρακτηριστικό σαν 
+	productid και επειδή θα δέχεται ακέραιους αριθμούς θα έχει int σαν data type. </p>
+
+<p>Κάθε προϊόν έχει ένα όνομα ή μια κατηγορία κάτω από την οποία ανήκει. Μπορούμε λοιπόν να ονομάσουμε αυτό το 
+	field productName με data type είδος string.</p>
+
+<p>Μπορούμε επίσης να υποθέσουμε ότι κάθε προϊόν που πουλάμε έχει ένα κόστος το οποίο μπορούμε να αντιπροσωπεύσουμε 
+	με ένα field που έχει το όνομα cost και data type είδος double.</p>
+
+<p>Τέλος, για να γνωρίζουμε πόσα προϊόντα έχουν μείνει στην αποθήκη έτσι ώστε να μπορούμε να ανταποκριθούμε 
+	στις απαιτήσεις των πελατών, ας δημιουργήσουμε ένα ακόμα field με το όνομα quantityInStock 
+	το οποίο θα δέχεται int τιμές.</p>
+
+<p>Εννοείται ότι μπορείτε να προσθέσετε όσα ακόμα χαρακτηριστικά θεωρείτε ότι ίσως να είναι χρήσιμα στο 
+	συγκεκριμένο σενάριο. Στο δικό μας παράδειγμα θα χρησιμοποιήσουμε αυτά τα τέσσερα και αργότερα θα 
+	προσθέσουμε και άλλα. Ας δούμε τώρα πως έχει αλλάξει ο κώδικας της κλάσης Product.</p>
+
+	<img src="./Lesson13/pic_7.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
+	<h2 class="content-h3">CREATING OBJECTS</h2>
+<p>Η κλάση Product είναι έτοιμη και με τα fields που ορίσαμε, μπορεί τώρα να περιγράψει ένα ή περισσότερα 
+	προϊόντα.  Μην ξεχνάμε ότι αφού δημιουργήσουμε μια κλάση, το αμέσως επόμενο βήμα είναι να χρησιμοποιήσουμε την 
+	κλάση σαν καλούπι για να δημιουργήσουμε αντικείμενα είδος Product. Πως όμως δημιουργούμε αντικείμενα από μια κλάση?</p>
+
+<p>Βασικά για να δημιουργήσουμε αντικείμενα θα πρέπει να μεταφερθούμε στην Program.cs κλάση στην οποία βρίσκεται 
+	η Main( ) μέθοδο. Ας αφαιρέσουμε μερικές γραμμές κώδικα που δεν θα χρειαστούμε ακόμα, και ας ξεκινήσουμε με την εξής απλή δομή:</p>
+	<img src="./Lesson13/pic_8.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
+
+<p>Είμαστε έτοιμοι λοιπόν για να δημιουργήσουμε το πρώτο μας προϊόν (αντικείμενο) από την κλάση Product. Για να 
+	το πραγματοποιήσουμε αυτό, θα πρέπει να γράψουμε την εξής εντολή:</p>
+	<img src="./Lesson13/pic_9.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
+
+<p>Ξέρω ότι η γραμμή αυτή του κώδικα σας προκαλεί αρκετά ερωτηματικά αλλά ας προσπαθήσουμε να την εξηγήσουμε 
+	με απλά λόγια. Ξεκινώντας από την δεξιά πλευρά του = συμβόλου.</p>
+
+<p>Το statement <strong>new Product( );</strong> δημιουργεί ένα αντικείμενο στην μνήμη του υπολογιστή. Αλλά πως;;;; H C#, από 
+	τη στιγμή που δημιουργήσαμε μια δική μας κλάση με μερικά fields, δημιούργησε για εμάς έναν μηχανισμό που 
+	ονομάζεται <strong>constructor</strong> με τον οποίο μπορούμε να δημιουργούμε αντικείμενα. Με άλλα λόγια, η C# μας 
+	λέει «ωραία, τώρα που δημιούργησες μια κλάση, θα σου προσθέσω και έναν constructor για να μπορείς να δημιουργείς 
+	αντικείμενα». Ο constructor έχει το ίδιο όνομα με την κλάση και για να τον καλέσουμε απλά γράφουμε την λέξη new και 
+	αμέσως μετά το όνομα του constructor που στο δικό μας παράδειγμα θα ονομάζεται Product. Η παρένθεση είναι μέρος της εντολής 
+	του constructor γιατί δηλώνει ότι μπορούμε στον constructor να περάσουμε και τιμές αν το επιθυμούμε. Θα φτάσουμε σε αυτό το σημείο 
+	αργότερα, αλλά για τώρα ας μείνουμε στην απλή σύνταξη ενός constructor.</p>
+
+<p>Οπότε καταλάβαμε τώρα ότι το statement <strong>new Product( );</strong> στην ουσία δίνει εντολή στον compiler της C# να δημιουργήσει 
+	ένα αντικείμενο. Το αντικείμενο αυτό δημιουργείτε σε μια περιοχή της μνήμης που ονομάζεται το <strong>Heap</strong>. Μέσα στο heap 
+	αποθηκεύονται όλα τα αντικείμενα της εφαρμογής με το κάθε ένα από αυτά να απασχολεί διαφορετική περιοχή στην μνήμη. Υπάρχει 
+	όμως ένα μεγάλο πρόβλημα εδώ – η C# σαν μοντέρνα γλώσσα προγραμματισμού έχει πλήρη έλεγχο των αντικειμένων 
+	συμπεριλαμβανομένων των διαδικασιών της δημιουργίας και της διαγραφής αντικειμένων από την μνήμη. Με άλλα λόγια 
+	από τη στιγμή που δημιουργήθηκε το αντικείμενο κανένας κώδικας δεν έχει απευθείας πρόσβαση στη μνήμη και στο 
+	αντικείμενο. Γλώσσες προγραμματισμού όπως C και C++ αφήνουν την ευθύνη διαχείρισης των αντικειμένων στον 
+	προγραμματιστή. Μοντέρνες γλώσσες προγραμματισμού όμως όπως η C#, η Java κτλ δεν επιτρέπουν την απευθείας 
+	πρόσβαση κώδικα στην διεύθυνση μνήμης που βρίσκεται το αντικείμενο. Οπότε πως λύνουμε αυτό το πρόβλημα;;;;</p>
+
+<p>Η λύση είναι πάρα πολύ απλή. Η C# μας επιτρέπει να δημιουργήσουμε μια μεταβλητή που θα αναφέρεται εκείνη στο 
+	αντικείμενο. Οπότε όταν είναι ανάγκη να κάνουμε οποιαδήποτε ενέργεια με το αντικείμενο, εμείς θα καλούμε την μεταβλητή και 
+	εκείνη θα πηγαίνει και θα εκτελεί τις ενέργειες που επιθυμούμε. Αυτές οι μεταβλητές επειδή είναι τοπικές μεταβλητές που 
+	ορίζονται μέσα στη μέθοδο Main ορίζονται σε ένα άλλο σημείο της μνήμης που ονομάζεται το <strong>Stack</strong>.</p>
+
+	<img src="./Lesson13/pic_10.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
+
+<p>Το ρόλο δήλωσης της μεταβλητής ή <strong>reference variable</strong> όπως ονομάζεται το έχει αναλάβει ο ορισμός από τα 
+	αριστερά του = συμβόλου δηλαδή το statement <strong>Product product1</strong>. </p>
+
+<p>Εδώ λοιπόν λέμε ότι θέλουμε να δημιουργήσουμε ένα reference με το όνομα product1 που θα είναι είδος 
+	Product και θα αναφέρεται στο αντικείμενο είδος Product που δημιουργήθηκε στο Heap. Το data type που δηλώνουμε στο 
+	reference product1 δηλώνει ότι το συγκεκριμένο reference θα αποκτήσει όλα τα χαρακτηριστικά και τις ιδιότητες της κλάση Product. </p>
+
+<p>Πολλές φορές θα ακούτε τους senior προγραμματιστές να λένε «ας δημιουργήσουμε ένα αντικείμενο product1». Εκείνοι 
+	γνωρίζουν ήδη την διαφορά που μόλις αναφέραμε όμως για λόγους συντομίας αναφέρονται στο reference σαν να είναι 
+	αντικείμενο. Τώρα που και εσείς γνωρίζετε την διαφορά θα χρησιμοποιώ και εγώ την ίδια λογική για λόγους συντομίας.</p>
+
+<p>Ωραία, οπότε δημιουργήσαμε ένα αντικείμενο product1. Ναι αλλά αυτό το product1 δεν περιέχει καμία πληροφορία για 
+	κανένα προϊόν. Πως δηλώνουμε λοιπόν ποια θα είναι τα στοιχεία και οι πληροφορίες που θα πλαισιώνουν το συγκεκριμένο αντικείμενο;</p>
+
+<p> Εδώ δεν έχουμε παρά να καλέσουμε το όνομα του αντικειμένου product1 (επαναλαμβάνω και πάλι 
+	αυτό είναι reference στην πραγματικότητα) και αμέσως μετά γράφοντας τελεία να δούμε 
+	την λίστα με όλα τα χαρακτηριστικά που έχει κληρονομήσει από την κλάση Product το αντικείμενο 
+	μας. Για να δώσουμε τιμή σε κάθε ένα από αυτά τα χαρακτηριστικά δεν έχουμε παρά να καλέσουμε <strong>object.field = value</strong> 
+	και να τους αναθέσουμε τιμή.</p>
+	<img src="./Lesson13/pic_11.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>
+
+<p>Αν θέλουμε να δείξουμε τις πληροφορίες που περιέχει το αντικείμενο μπορούμε να χρησιμοποιήσουμε Console.WriteLine statements 
+	όπως δείχνει ο παρακάτω κώδικας:</p>
+
+	<img src="./Lesson13/pic_12.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>						
+	<img src="./Lesson13/pic_13.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>	
+	<h2 class="content-h3">CREATING MORE OBJECTS</h2>
+<p>Τώρα που έχουμε εξηγήσει όλη τη λογική δημιουργίας αντικειμένων από μια κλάση, ας προχωρήσουμε και 
+	ας δημιουργήσουμε ένα ακόμα αντικείμενο δίνοντας του διαφορετικά στοιχεία.</p>
+
+	<img src="./Lesson13/pic_14.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>	
+
+	<img src="./Lesson13/pic_15.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>	
+	<img src="./Lesson13/pic_16.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>	
+
+	<img src="./Lesson13/pic_17.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>	
+
+	<img src="./Lesson13/pic_18.jpg" alt="Δωρεάν Μαθήματα C#"/>
+	<p></p>	
+
+
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -301,255 +469,55 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 						<!-- sectionRow -->
-						<section class="sectionRow">
+						<!-- <section class="sectionRow">
 							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ C# COMPLETE COURSE</h2>
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
-								aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
+								aria-multiselectable="true"> -->
 								<!-- panel -->
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h3 class="panel-title fw-normal">
 											<a class="accOpener" role="button" data-parent="#accordion"
 												aria-expanded="false" aria-controls="collapseOne"
-												href="./lesson1_Creating_your_First_C_Sharp_App_using_Visual_Studio.html"
-												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Creating your first C# App using Visual Studio</a>
-											<span class="accOpenerCol">
+												href="https://groundofcode.blogspot.com/2022/01/1-python-installation.html"
+												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Python Installation in Windows</a>
+											<span class="accOpenerCol"> -->
 
 												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-											</span>
+											<!-- </span> -->
 											<!--<span class="accOpenerCol hd-phone">
 													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 													<time datetime="2011-01-12" class="timeCount">17 Min</time>
 												</span>-->
-											</a>
+											<!-- </a>
 										</h3>
 
-									</div>
+									</div> -->
 
 
 									<!-- collapseOne -->
 
-								</div>
+								<!-- </div> -->
 
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingOne">
 									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson2_Exploring_the_System_Console_class.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Exploring the System.Console class</a>
-											<span class="accOpenerCol">
+										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="https://groundofcode.blogspot.com/2022/01/enothta-2-python-strings-string.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Python Strings and Comments</a>
+											<span class="accOpenerCol"> -->
 
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
+								<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
+								<!-- </span> -->
+								<!--<span class="accOpenerCol hd-phone">
 												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-								 </a>
-									</h3> -->
+											</span>-->
+								<!-- </a>
+									</h3>
 									</div>
-								</div>
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson3_variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - Variables</a>
-												<span class="accOpenerCol">
-	
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-									 </a>
-										</h3> -->
-										</div>
-									</div>
-
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson4_primitive_types.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Primitive Types</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-										
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson5_operators_part1.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Operators (Part 1)</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-															
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h3 class="panel-title fw-normal">
-									<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson6_operators_part2.html" style="color:blue;">ΕΝΟΤΗΤΑ 6 - Operators (Part 2)</a>
-										<span class="accOpenerCol">
-
-							<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-							<!-- </span>
-							<span class="accOpenerCol hd-phone">
-											<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-											<time datetime="2011-01-12" class="timeCount">17 Min</time>
-										</span>
-								</a>
-								</h3> -->
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson7_theory_review.html" style="color:blue;">ΕΝΟΤΗΤΑ 7 - Theory Review</a>
-											<span class="accOpenerCol">
-	
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
-												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-									</a>
-									</h3> -->
-									</div>
-								</div>
-
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson8_conditional_control_statements.html" style="color:blue;">ΕΝΟΤΗΤΑ 8 - Conditional Control Statements (if - else)</a>
-												<span class="accOpenerCol">
-		
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-										</a>
-										</h3> -->
-										</div>
-									</div>
-
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson9_switch_case.html" style="color:blue;">ΕΝΟΤΗΤΑ 9 - Conditional Control Statements (Switch)</a>
-													<span class="accOpenerCol">
-			
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-											</a>
-											</h3> -->
-											</div>
-										</div>
-
-<div class="panel panel-default">
-	<div class="panel-heading" role="tab" id="headingOne">
-		<h3 class="panel-title fw-normal">
-			<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson10_while_and_do_while.html" style="color:blue;">ΕΝΟΤΗΤΑ 10 - While and Do While Iteration Statements</a>
-				<span class="accOpenerCol">
-
-	<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-	<!-- </span>
-	<span class="accOpenerCol hd-phone">
-					<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-					<time datetime="2011-01-12" class="timeCount">17 Min</time>
-				</span>
-		</a>
-		</h3> -->
-		</div>
-	</div>
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson11_for_loop_break_continue.html" style="color:blue;">ΕΝΟΤΗΤΑ 11 - For Loop, Break and Continue</a>
-					<span class="accOpenerCol">
-	
-		<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-		<!-- </span>
-		<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>
-			</a>
-			</h3> -->
-			</div>
-		</div>
-
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson12_understanding_object_oriented_programming.html" style="color:blue;">ΕΝΟΤΗΤΑ 12 - Understanding Object-Oriented Programming</a>
-						<span class="accOpenerCol">
-		
-			<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-			<!-- </span>
-			<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>
-				</a>
-				</h3> -->
-				</div>
-			</div>
-
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingOne">
-					<h3 class="panel-title fw-normal">
-						<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson13_creating_classes_fields_and_objects.html" style="color:blue;">ΕΝΟΤΗΤΑ 13 - Creating Classes, Fields and Objects</a>
-							<span class="accOpenerCol">
-			
-				<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-				<!-- </span>
-				<span class="accOpenerCol hd-phone">
-								<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-								<time datetime="2011-01-12" class="timeCount">17 Min</time>
-							</span>
-					</a>
-					</h3> -->
-					</div>
-				</div>
-	
-
+								</div> -->
 
 								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
@@ -1063,10 +1031,10 @@
 
 				<!-- panel -->
 
-			</div>
+			<!-- </div>
 
 
-			</section>
+			</section> -->
 
 
 			<!-- sectionRow -->
@@ -1190,12 +1158,12 @@
 										class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 								</div>
 							</a>
-						</li>	
-						
+						</li>
+
 						<li>
 							<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 								<div class="alignleft">
-									<img src="./images/javascript.jpeg" alt="JavaScript Complete Course">
+									<img src="./images/javascript.jpeg" alt="JavasSript δωρεάν μαθήματα">
 								</div>
 								<div class="description-wrap">
 									<h4>JAVASCRIPT Complete Course</h4>
@@ -1204,7 +1172,6 @@
 								</div>
 							</a>
 						</li>
-						
 						<!--<li>
 									<a href="#">
 										<div class="alignleft">
@@ -1299,13 +1266,14 @@
 											</div>
 										</a>
 									</li>
+
 									<li>
 										<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 											<div class="alignleft">
-												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JavaScript">
+												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JAVASCRIPT">
 											</div>
 											<div class="description-wrap">
-												<h4>Μαθαίνω JavaScript Προγραμματισμό</h4>
+												<h4>Μαθαίνω JAVASCRIPT Προγραμματισμό</h4>
 												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 											</div>
 										</a>
@@ -1335,7 +1303,7 @@
 					</ul>
 				</div>
 				<nav class="col-xs-12 col-sm-6 col-md-3 col">
-					<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+					<h3>ΣΥΝΔΕΣΜΟΙ</h3>
 					<!-- fooer navigation -->
 					<ul class="fooer-navigation list-unstyled">
 						<!--<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
