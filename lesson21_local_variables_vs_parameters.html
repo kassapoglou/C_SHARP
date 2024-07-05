@@ -14,7 +14,7 @@
 	<!-- set the Keyword -->
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="C#, C Sharp, ASP.NET CORE, .NET CORE, .NET, δωρεάν, seminaria C#, mathimata C#,
-               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#" />
+               προγραμματισμός, δωρεάν μαθήματα C#, δωρεάν σεμινάρια C#, μαθήματα C#, σεμινάρια C#. ADO.NET, EntityFramework" />
 	<meta name="author" content="Michail Kassapoglou" />
 	<!-- set the page title -->
 	<title>Δωρεάν Μαθήματα C#</title>
@@ -33,6 +33,7 @@
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -43,6 +44,7 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
 
 <body>
@@ -92,7 +94,7 @@
 							<!-- logo -->
 							<div class="logo">
 								<a href="https://kassapoglou.github.io/main/">
-									<!--<img src="images/logo.png" alt="KASSAPOGLOU">-->
+									<!-- <img src="images/logo.png" alt="KASSAPOGLOU"> -->
 									<h1>KASSAPOGLOU</h1>
 								</a>
 							</div>
@@ -129,6 +131,7 @@
 												<!--<li><a href="course-single.html">Course Single</a></li>-->
 											</ul>
 										</li>
+										
 										<li class="dropdown">
 											<a href="#">WEB DEVELOPMENT</a>
 											<ul class="dropdown-menu">
@@ -210,7 +213,7 @@
 				<div class="container">
 					<!-- breadcrumb -->
 					<ol class="breadcrumb">
-						<li><a href="#">ΑΡΧΙΚΗ</a></li>
+						<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
 						<li><a href="https://kassapoglou.github.io/csharp/csharp.html">C#</a></li>
 						<!-- <li class="active">C#</li> -->
 					</ol>
@@ -268,27 +271,58 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/c_Sharp_pic.jpg" alt="image description">
 						</div>
-						<h3 class="content-h3">ΠΕΡΙΓΡΑΦΗ ΣΕΜΙΝΑΡΙΟΥ</h3>
-						<p>Θέλετε να κατανοήσετε από την αρχή και σωστά την γλώσσα προγραμματισμού C# και έννοιες όπως 
-							μεταβλητές (variables), τελεστές (operators), και δηλώσεις επιλογής (selection statements); 
-							Εάν «ΝΑΙ» τότε αυτή η σειρά δωρεάν μαθημάτων στην γλώσσα προγραμματισμού C# είναι για εσάς.</p>
+<h2 class="content-h3">ΕΝΟΤΗΤΑ 21 - LOCAL VARIABLES VS PARAMETERS</h2>
+<h2 class="content-h3">INTRODUCTION</h2>
+<p> 
+	Σε αυτό το δωρεάν μάθημα C# θα εξηγήσουμε τη διαφορά που υπάρχει ανάμεσα στον ορισμό της παραμέτρου και τον ορισμό
+	ενός local variable. Αν και η εξήγηση είναι πολύ απλή, πολλές φορές ο τρόπος που το ακούμε ή το βλέπουμε γραμμένο 
+	σε κάποιο tutorial ή documentation μας μπερδεύει.
+</p>
+<h2 class="content-h3">DEFINITION OF LOCAL VARIABLE</h2>
+<p>
+	Ας γυρίσουμε πίσω στο απλό πρόγραμμα που δημιουργήσαμε στο προηγούμενο δωρεάν μάθημα C# και ας μελετήσουμε εκτενέστερα
+	τη μέθοδο CalculateTax() που βρίσκεται μέσα στη κλάση Product. 
+</p>
+	<img src="./Lesson21/pic_1.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+<p>Η συγκεκριμένη μέθοδος, όπως την έχουμε ορίσει, δεν επιστρέφει καμία τιμή πίσω στο πρόγραμμα μας γιατί το 
+	return data type το έχουμε ορίσει να είναι void. Επίσης, μέσα στη παρένθεση, δεν περνάμε καμία απολύτως τιμή οπότε 
+	καλούμε και εκτελούμε τη μέθοδο χωρίς να περάσουμε καμία απολύτως τιμή.
+</p>
+<p>Μέσα όμως στο κώδικα της μεθόδου έχουμε ορίσει μια μεταβλητή με το όνομα t η οποία μέσα από το 
+	control statement του if-else θα πάρει μια τιμή που τελικά θα την αναθέσει στην μεταβλητή tax που έχει
+	οριστεί στην αρχή της κλάσης σαν instance variable. Η μεταβλητή t θεωρείται σαν <strong>local variable</strong> γιατί 
+	λειτουργεί και ισχύει μόνο μέσα στη μέθοδο. Εκτός μεθόδου δεν μπορεί να τη δει κανένα άλλο στοιχείο ή να 
+	την καλέσει απευθείας και να την χρησιμοποιήσει. Όταν λοιπόν ορίζουμε μεταβλητές μέσα σε μια μέθοδο, τότε
+	αυτές οι μεταβλητές έχουν σαν εύρος δράσης μόνο την ίδια την μέθοδο και στοιχεία μέσα από την ίδια μέθοδο
+	έχουν πρόσβαση σε αυτές.
+</p>
+<h2 class="content-h3">DEFINITION OF PARAMETER</h2>
+<p>Ας δούμε τώρα τον ορισμό της παραμέτρου μέσα από την μέθοδο SetCost( ) που βρίσκεται μέσα στην κλάση Product.</p>
+<img src="./Lesson21/pic_2.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
 
-						<p>Αυτή η ολοκληρωμένη σειρά μαθημάτων θα σας διδάξει τις βασικές αρχές της γλώσσας προγραμματισμού 
-							C# στο .NET από την αρχή. Θα οδηγηθείτε σε μια προσεκτικά επιλεγμένη προσέγγιση για αρχάριους 
-							στην εκμάθηση των βασικών αρχών προγραμματισμού C#.</p>
+<p>Στη SetCost( ) μέθοδο, αυτή τη φορά περνάμε μια μεταβλητή μέσα στην παρένθεση της μεθόδου. Η μεταβλητή, εκτός 
+	από όνομα, θα περιέχει και το data type (που στο συγκεκριμένο παράδειγμα είναι double) για να γνωρίζουμε τι είδος
+	τιμή θα πρέπει να περάσουμε μέσα στην παρένθεση όταν καλέσουμε τη συγκεκριμένη μέθοδο. Επειδή ορίζουμε την μεταβλητή
+	μέσα στην παρένθεση τότε λαμβάνει την ειδική ονομασία <strong>parameter</strong>.
+</p>
+<p>Αμέσως μετά τον ορισμό, και εφόσον περάσουμε κάποια τιμή στη μέθοδο, η τιμή της παραμέτρου μπορεί να χρησιμοποιηθεί 
+	μέσα στο κώδικα της μεθόδου. Στο συγκεκριμένο παράδειγμα, η μέθοδος SetCost() δεν επιστρέφει καμία τιμή πίσω στο πρόγραμμα 
+	μας γιατί το return data type είναι void, όμως οποιαδήποτε τιμή περάσουμε σαν τιμή της παραμέτρου value θα χρησιμοποιηθεί 
+	για να αναθέσουμε αυτή τη τιμή στην instance variable cost.
+</p>
+<h2 class="content-h3">LOCAL VARIABLE VS PARAMETER</h2>
+<p>Τώρα που αναλύσαμε και καταλάβαμε ποια ακριβώς είναι η διαφορά ανάμεσα σε μια local variable και μια parameter μπορούμε 
+	να βάλουμε και τις δύο έννοιες μαζί σε ένα απλό σχεδιάγραμμα για να μπορείτε εύκολα να αναφερθείτε σε αυτό ανά πάσα στιγμή.
+</p>
+<img src="./Lesson21/pic_3.png" alt="Δωρεάν Μαθήματα C#"/>
+<p></p>
+<p>Σαν περίληψη των όσων αναλύσαμε μπορούμε να πούμε ότι οι μεταβλητές που ορίζονται μέσα στην παρένθεση της 
+	μεθόδου ονομάζονται parameters ενώ οι μεταβλητές που ορίζονται μέσα στη μέθοδο ονομάζονται local variables.
+</p>
 
-						<p>Η σχεδίαση των δωρεάν μαθημάτων C# έχει γίνει με τέτοιο τρόπο ώστε να εξυπηρετεί δύο διαφορετικές 
-							ομάδες: τους απόλυτα αρχάριους που είναι εντελώς καινούργιοι στη C# και στο .NET παρέχοντας 
-							τους μια γερή βάση στον προγραμματισμό, και στους προγραμματιστές που προέρχονται από άλλες 
-							γλώσσες προγραμματισμού και αναζητούν να μάθουν τη σύνταξη της C# είτε για προσωπική είτε για 
-							επαγγελματική ανάπτυξη κώδικα.</p>
 
-						<p>Δεν απαιτείται προηγούμενη γνώση C# ή .NET, καθώς το μάθημα καλύπτει όλα τα απαραίτητα 
-							στοιχεία για να ξεκινήσετε με τις βασικές αρχές προγραμματισμού σωστά και μεθοδικά. </p>
-
-						<p>Συνιστάται η πρόσβαση σε περιβάλλοντα ανάπτυξης όπως το Visual Studio Code, το Visual 
-							Studio ή οποιοδήποτε IDE που υποστηρίζει C#.</p>
-						
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
@@ -301,385 +335,56 @@
 							<li>Battling challenging cost targets and the need to build.</li>
 						</ul>
 						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
-						<h2>ΕΝΟΤΗΤΕΣ</h2>
+						<!-- <h2>ΕΝΟΤΗΤΕΣ</h2> -->
 						<!-- sectionRow -->
-						<section class="sectionRow">
+						<!-- <section class="sectionRow">
 							<h2 class="h6 text-uppercase fw-semi rowHeading">ΕΝΟΤΗΤΕΣ ΤΟΥ C# COMPLETE COURSE</h2>
 							<!-- sectionRowPanelGroup -->
-							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
-								aria-multiselectable="true">
+							<!-- <div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist"
+								aria-multiselectable="true"> -->
 								<!-- panel -->
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h3 class="panel-title fw-normal">
 											<a class="accOpener" role="button" data-parent="#accordion"
 												aria-expanded="false" aria-controls="collapseOne"
-												href="./lesson1_Creating_your_First_C_Sharp_App_using_Visual_Studio.html"
-												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Creating your first C# App using Visual Studio</a>
-											<span class="accOpenerCol">
+												href="https://groundofcode.blogspot.com/2022/01/1-python-installation.html"
+												style="color:blue;">ΕΝΟΤΗΤΑ 1 - Python Installation in Windows</a>
+											<span class="accOpenerCol"> -->
 
 												<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
-											</span>
+											<!-- </span> -->
 											<!--<span class="accOpenerCol hd-phone">
 													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 													<time datetime="2011-01-12" class="timeCount">17 Min</time>
 												</span>-->
-											</a>
+											<!-- </a>
 										</h3>
 
-									</div>
+									</div> -->
 
 
 									<!-- collapseOne -->
 
-								</div>
+								<!-- </div> -->
 
-								<div class="panel panel-default">
+								<!-- <div class="panel panel-default">
 								<div class="panel-heading" role="tab" id="headingOne">
 									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson2_Exploring_the_System_Console_class.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Exploring the System.Console class</a>
-											<span class="accOpenerCol">
+										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="https://groundofcode.blogspot.com/2022/01/enothta-2-python-strings-string.html" style="color:blue;">ΕΝΟΤΗΤΑ 2 - Python Strings and Comments</a>
+											<span class="accOpenerCol"> -->
 
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
+								<!--<i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i>-->
+								<!-- </span> -->
+								<!--<span class="accOpenerCol hd-phone">
 												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
 												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-								 </a>
-									</h3> -->
+											</span>-->
+								<!-- </a>
+									</h3>
 									</div>
-								</div>
+								</div> -->
 
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson3_variables.html" style="color:blue;">ΕΝΟΤΗΤΑ 3 - Variables</a>
-												<span class="accOpenerCol">
-	
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-									 </a>
-										</h3> -->
-										</div>
-									</div>
-
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson4_primitive_types.html" style="color:blue;">ΕΝΟΤΗΤΑ 4 - Primitive Types</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-										
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson5_operators_part1.html" style="color:blue;">ΕΝΟΤΗΤΑ 5 - Operators (Part 1)</a>
-													<span class="accOpenerCol">
-		
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-										 </a>
-											</h3> -->
-											</div>
-										</div>
-
-
-
-															
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h3 class="panel-title fw-normal">
-									<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson6_operators_part2.html" style="color:blue;">ΕΝΟΤΗΤΑ 6 - Operators (Part 2)</a>
-										<span class="accOpenerCol">
-
-							<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-							<!-- </span>
-							<span class="accOpenerCol hd-phone">
-											<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-											<time datetime="2011-01-12" class="timeCount">17 Min</time>
-										</span>
-								</a>
-								</h3> -->
-								</div>
-							</div>
-
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson7_theory_review.html" style="color:blue;">ΕΝΟΤΗΤΑ 7 - Theory Review</a>
-											<span class="accOpenerCol">
-	
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
-												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-									</a>
-									</h3> -->
-									</div>
-								</div>
-
-
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson8_conditional_control_statements.html" style="color:blue;">ΕΝΟΤΗΤΑ 8 - Conditional Control Statements (if - else)</a>
-												<span class="accOpenerCol">
-		
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-										</a>
-										</h3> -->
-										</div>
-									</div>
-
-
-
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson9_switch_case.html" style="color:blue;">ΕΝΟΤΗΤΑ 9 - Conditional Control Statements (Switch)</a>
-													<span class="accOpenerCol">
-			
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-											</a>
-											</h3> -->
-											</div>
-										</div>
-
-<div class="panel panel-default">
-	<div class="panel-heading" role="tab" id="headingOne">
-		<h3 class="panel-title fw-normal">
-			<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson10_while_and_do_while.html" style="color:blue;">ΕΝΟΤΗΤΑ 10 - While and Do While Iteration Statements</a>
-				<span class="accOpenerCol">
-
-	<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-	<!-- </span>
-	<span class="accOpenerCol hd-phone">
-					<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-					<time datetime="2011-01-12" class="timeCount">17 Min</time>
-				</span>
-		</a>
-		</h3> -->
-		</div>
-	</div>
-
-	<div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-			<h3 class="panel-title fw-normal">
-				<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson11_for_loop_break_continue.html" style="color:blue;">ΕΝΟΤΗΤΑ 11 - For Loop, Break and Continue</a>
-					<span class="accOpenerCol">
-	
-		<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-		<!-- </span>
-		<span class="accOpenerCol hd-phone">
-						<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-						<time datetime="2011-01-12" class="timeCount">17 Min</time>
-					</span>
-			</a>
-			</h3> -->
-			</div>
-		</div>
-
-		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
-				<h3 class="panel-title fw-normal">
-					<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson12_understanding_object_oriented_programming.html" style="color:blue;">ΕΝΟΤΗΤΑ 12 - Understanding Object-Oriented Programming</a>
-						<span class="accOpenerCol">
-		
-			<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-			<!-- </span>
-			<span class="accOpenerCol hd-phone">
-							<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-							<time datetime="2011-01-12" class="timeCount">17 Min</time>
-						</span>
-				</a>
-				</h3> -->
-				</div>
-			</div>
-
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingOne">
-					<h3 class="panel-title fw-normal">
-						<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson13_creating_classes_fields_and_objects.html" style="color:blue;">ΕΝΟΤΗΤΑ 13 - Creating Classes, Fields and Objects</a>
-							<span class="accOpenerCol">
-			
-				<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-				<!-- </span>
-				<span class="accOpenerCol hd-phone">
-								<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-								<time datetime="2011-01-12" class="timeCount">17 Min</time>
-							</span>
-					</a>
-					</h3> -->
-					</div>
-				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="headingOne">
-						<h3 class="panel-title fw-normal">
-							<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson14_fields_access_modifiers.html" style="color:blue;">ΕΝΟΤΗΤΑ 14 - Field Access Modifiers</a>
-								<span class="accOpenerCol">
-				
-					<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-					<!-- </span>
-					<span class="accOpenerCol hd-phone">
-									<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-									<time datetime="2011-01-12" class="timeCount">17 Min</time>
-								</span>
-						</a>
-						</h3> -->
-						</div>
-					</div>
-	
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
-							<h3 class="panel-title fw-normal">
-								<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson15_performing_calculations_with_object_fields.html" style="color:blue;">ΕΝΟΤΗΤΑ 15 - Performing Calculations with Object Fields</a>
-									<span class="accOpenerCol">
-					
-						<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-						<!-- </span>
-						<span class="accOpenerCol hd-phone">
-										<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-										<time datetime="2011-01-12" class="timeCount">17 Min</time>
-									</span>
-							</a>
-							</h3> -->
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="headingOne">
-								<h3 class="panel-title fw-normal">
-									<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson16_static_class_members.html" style="color:blue;">ΕΝΟΤΗΤΑ 16 - Static Class Members</a>
-										<span class="accOpenerCol">
-						
-							<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-							<!-- </span>
-							<span class="accOpenerCol hd-phone">
-											<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-											<time datetime="2011-01-12" class="timeCount">17 Min</time>
-										</span>
-								</a>
-								</h3> -->
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingOne">
-									<h3 class="panel-title fw-normal">
-										<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson17_readonly_and_constant_fields.html" style="color:blue;">ΕΝΟΤΗΤΑ 17 - Readonly and Constant Fields</a>
-											<span class="accOpenerCol">
-							
-								<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-								<!-- </span>
-								<span class="accOpenerCol hd-phone">
-												<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-												<time datetime="2011-01-12" class="timeCount">17 Min</time>
-											</span>
-									</a>
-									</h3> -->
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading" role="tab" id="headingOne">
-										<h3 class="panel-title fw-normal">
-											<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson18_local_constants.html" style="color:blue;">ΕΝΟΤΗΤΑ 18 - Local Constants</a>
-												<span class="accOpenerCol">
-								
-									<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-									<!-- </span>
-									<span class="accOpenerCol hd-phone">
-													<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-													<time datetime="2011-01-12" class="timeCount">17 Min</time>
-												</span>
-										</a>
-										</h3> -->
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h3 class="panel-title fw-normal">
-												<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson19_methods.html" style="color:blue;">ΕΝΟΤΗΤΑ 19 - Methods</a>
-													<span class="accOpenerCol">
-									
-										<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-										<!-- </span>
-										<span class="accOpenerCol hd-phone">
-														<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-														<time datetime="2011-01-12" class="timeCount">17 Min</time>
-													</span>
-											</a>
-											</h3> -->
-											</div>
-										</div>
-
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="headingOne">
-												<h3 class="panel-title fw-normal">
-													<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson20_encapsulation.html" style="color:blue;">ΕΝΟΤΗΤΑ 20 - Encapsulation</a>
-														<span class="accOpenerCol">
-										
-											<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-											<!-- </span>
-											<span class="accOpenerCol hd-phone">
-															<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-															<time datetime="2011-01-12" class="timeCount">17 Min</time>
-														</span>
-												</a>
-												</h3> -->
-												</div>
-											</div>
-
-											<div class="panel panel-default">
-												<div class="panel-heading" role="tab" id="headingOne">
-													<h3 class="panel-title fw-normal">
-														<a  class="accOpener" role="button"  data-parent="#accordion"  aria-expanded="false" aria-controls="collapseOne" href="./lesson21_local_variables_vs_parameters.html" style="color:blue;">ΕΝΟΤΗΤΑ 21 - Local Variables vs Parameters</a>
-															<span class="accOpenerCol">
-											
-												<!-- <i class="fas fa-chevron-circle-right accOpenerIcn"></i><i class="far fa-file inlineIcn"></i></i>Python Installation in Windows</i> -->
-												<!-- </span>
-												<span class="accOpenerCol hd-phone">
-																<span class="tagText bg-primary fw-semi text-white text-uppercase">preview</span>
-																<time datetime="2011-01-12" class="timeCount">17 Min</time>
-															</span>
-													</a>
-													</h3> -->
-													</div>
-												</div>
 								<!-- <div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="headingOne">
 										<h3 class="panel-title fw-normal">
@@ -1192,10 +897,10 @@
 
 				<!-- panel -->
 
-			</div>
+			<!-- </div>
 
 
-			</section>
+			</section> -->
 
 
 			<!-- sectionRow -->
@@ -1319,12 +1024,12 @@
 										class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 								</div>
 							</a>
-						</li>	
-						
+						</li>
+
 						<li>
 							<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 								<div class="alignleft">
-									<img src="./images/javascript.jpeg" alt="JavaScript Complete Course">
+									<img src="./images/javascript.jpeg" alt="JavasSript δωρεάν μαθήματα">
 								</div>
 								<div class="description-wrap">
 									<h4>JAVASCRIPT Complete Course</h4>
@@ -1333,7 +1038,6 @@
 								</div>
 							</a>
 						</li>
-						
 						<!--<li>
 									<a href="#">
 										<div class="alignleft">
@@ -1428,13 +1132,14 @@
 											</div>
 										</a>
 									</li>
+
 									<li>
 										<a href="https://kassapoglou.github.io/javascript/javascript-programming.html">
 											<div class="alignleft">
-												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JavaScript">
+												<img src="./images/javascript.jpeg" alt="Δωρεάν μαθήματα JAVASCRIPT">
 											</div>
 											<div class="description-wrap">
-												<h4>Μαθαίνω JavaScript Προγραμματισμό</h4>
+												<h4>Μαθαίνω JAVASCRIPT Προγραμματισμό</h4>
 												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
 											</div>
 										</a>
@@ -1464,7 +1169,7 @@
 					</ul>
 				</div>
 				<nav class="col-xs-12 col-sm-6 col-md-3 col">
-					<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+					<h3>ΣΥΝΔΕΣΜΟΙ</h3>
 					<!-- fooer navigation -->
 					<ul class="fooer-navigation list-unstyled">
 						<!--<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
